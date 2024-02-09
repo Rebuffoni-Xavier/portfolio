@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Copyright 1999-2020. Plesk International GmbH. All rights reserved.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xavier.R - Accueil</title>
+
+    <link rel="stylesheet" href="../../src/css/base/en/clair/index.css">
+    <link rel="stylesheet" href="../../src/css/layout/header_mobile.css">
+    <link rel="stylesheet" href="../../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../../src/css/components/button.css">
+
+    <link rel="icon" href="../../public/icons/Final.png">
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="menu">
+        <ul class="menu_mobile mobile">
+            <li><a href="#home"><img src="../../public/icons/black/Home_Black.png" alt=""></a></li>
+            <li><a href="#about"><img src="../../public/icons/black/About_Black.png" alt=""></a></li>
+            <li><a href="#photography"><img src="../../public/icons/black/Photo_Black.png" alt=""></a></li>
+            <li><a href="#video"><img src="../../public/icons/black/Video_Black.png" alt=""></a></li>
+            <li><a href="#contact"><img src="../../public/icons/black/Contact_Black.png" alt=""></a></li>
+        </ul>
+
+        <!-- <ul class="menu_largescreen">
+            <li class="itemslarge__li3"><a href="./photography/index.html" class="itemslarge__li1--title">Photography</a></li>
+            <li class="itemslarge__li4"><a href="./video/index.html" class="itemslarge__li2--title">Video</a></li>
+            <li class="itemslarge__li5"><a href="./contact/index.html" class="itemslarge__li4--title">Contact</a></li>
+        </ul> -->
+    </header>
+
+    <main>
+        <header class="header" id="home">
+            <div class="header_high high">
+                <a class="high_logo" href="/index.html">
+                    <img class="high_logo--img" src="../../public/icons/Final.png" alt="Logo Portfolio">
+                </a>
+        
+                <a class="high_mode" href="">Button</a>
+            </div>
+
+            <div class="header_title">
+                <h1 class="header_title--text">Xavier REBUFFONI</h1>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel_list" id="carousel">
+                    <div class="carousel_list--item"><img src="../../public/img/home/1694300345935.jpg" alt=""></div>
+                    <div class="carousel_list--item"><img src="../../public/img/photography/main/IMG_20220803_065642.jpg" alt=""></div>
+                    <div class="carousel_list--item"><img src="../../public/img/video/main.jpeg" alt=""></div>
+                    <div class="carousel_list--item"><img src="../../public/img/video/stopmotion_main.JPG" alt=""></div>
+                </div>
+
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+
+            <div>
+                <a href="">
+                    <img src="../../public/icons/France.png" alt="">
+                    Français
+                </a>
+            </div>
+        </header>
+
+        <section>
+            <article class="about" id="about">
+                <h2>About Me</h2>
+
+                <div>
+                    <img src="../../public/img/home/1694300345935.jpg" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+                <p>I’m a student from the University of Franche-Comté. I am in second year of MMI (Métier du Multimédia et de l'Internet).</p>
+            </article>
+        </section>
+
+        <section>
+            <article class="carousel-container" id="photography">
+                <div class="carousel-wrapper" id="carousel">
+                    <div class="carousel-item-1">
+                        <h2>Photography - Infinity Photos</h2>
+                        <p>Infinity Photos is the name of the Instagram account where I post the photos I take. Through these photos, I want to show all the beauty of this Earth and all the diversity of its landscapes.</p>
+                    </div>
+
+                    <div class="carousel-item-2">
+                        <h3>How do I take my photos ?</h3>
+                        <p class="article__text">I never plan the photos I will take in advance. When I see something beautiful, I take a picture of it and see how it looks. Sometimes I do several tests with different camera angles before making the perfect photo. I really like to walk around fifferent places and suddenly have an idea of a photo and then take it. I am particularly sensitive to landscapes, sunsets, flowers, architecture and animals which are themes that come up regularly in my photos. I take all my photos with a Canon EOS R10.</p>
+
+                        <figure class="article__img">
+                            <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
+                            <figcaption>The camera I use to take my photos</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="carousel-item-3">
+                        <a class="link__pages" href="./pages/landscapes.html">
+                            <h3 class="link__pages--title">Landscapes</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-4">
+                        <a class="link__pages" href="./pages/animals.html">
+                            <h3 class="link__pages--title">Animals</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-5">
+                        <a class="link__pages" href="./pages/flowers.html">
+                            <h3 class="link__pages--title">Flowers</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-6">
+                        <a class="link__pages" href="./pages/city.html">
+                            <h3 class="link__pages--title">City</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-7">
+                        <a class="link__pages" href="./pages/sunset.html">
+                            <h3 class="link__pages--title">Sunset</h3>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article class="carousel-container" id="video">
+                <div class="carousel-wrapper" id="carousel">
+                    <div class="carousel-item-1">
+                        <h2>Video</h2>
+                        <p>I'm passionate about video and I have done some video projects for school.</p>
+                    </div>
+
+                    <div class="carousel-item-2">
+                        <h3>How do I take my video ?</h3>
+
+                        <p class="article__text">To make my videos I use the same camera than the photography project.</p>
+
+                        <figure class="article__img">
+                            <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
+                            <figcaption>The camera I use to take my videos</figcaption>
+                        </figure>
+
+                        <figure class="article2__img">
+                            <img src="../../public/img/video/DaVinci_Resolve_17_logo.png" alt="Davinci Resolve Logo">
+                            <figcaption>Davinci Resolve, the software I use</figcaption>
+                        </figure>
+    
+                        <p class="article2__text">For the videos editing I use Davinci Resolve sofware.</p>
+                    </div>
+
+                    <div class="carousel-item-3">
+                        <a class="link__pages" href="./pages/event.html">
+                            <h3 class="link__pages--title">Event Video</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-4">
+                        <a class="link__pages" href="./pages/stopmotion.html">
+                            <h3 class="link__pages--title">Stop Motion Video</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-5">
+                        <a class="link__pages" href="./pages/looping.html">
+                            <h3 class="link__pages--title">Looping Video</h3>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item-6">
+                        <a class="link__pages" href="./pages/mood.html">
+                            <h3 class="link__pages--title">Mood Video</h3>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article id="contact">
+                <h2>Contact</h2>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section>
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Photography</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Videos</a></li>
+            </ul>
+        </section>
+
+        <sections class="reseaux">
+            <ul class="reseaux_link">
+                <li><a href="https://www.instagram.com/infinity___photos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img class="reseaux_link--img1" src="./public/icons/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img class="reseaux_link--img2" src="./public/icons/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+                <li><a href="mailto:xav.rebuffoni@gmail.com"><img class="reseaux_link--img2" src="./public/icons/email-1-svgrepo-com.svg" alt="Email"></a></li>
+                <li><a href="https://www.linkedin.com/in/xavier-rebuffoni-786128256/"><img class="reseaux_link--img1" src="./public/icons/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+            </ul>
+        </sections>
+
+        <sections class="credits">&copy; Xavier REBUFFONI - 2023</sections>
+    </footer>
+
+    <script src="../../src/js/home/home.js"></script>
+</body>
+</html>

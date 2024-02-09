@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: White;
+    font-size: 32px;
+    width: 100%;
+}
+
+.principal__landscapes, .principal__animals, .principal__flowers, .principal__city, .principal__sunset {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    padding-top: 30vh;
+}
+
+.principal__landscapes {
+    background-image: url(../../../public/img/photography/main/IMG_1435.JPG);
+}
+
+.principal__animals {
+    background-image: url(../../../public/img/photography/main/IMG_2110.JPG);
+}
+
+.principal__flowers {
+    background-image: url(../../../public/img/photography/main/IMG_2155.JPG);
+}
+
+.principal__city {
+    background-image: url(../../../public/img/photography/main/IMG_2576.JPG);
+}
+
+.principal p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 5rem;
+}
+
+.principal__sunset {
+    background-image: url(../../../public/img/photography/main/IMG_1850.JPG);
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0.514);
+    width: fit-content;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.intro p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.main_img {
+    width: 335px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .intro p {
+        width: 100%;
+    }
+}
+
+.down {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.down_link--img {
+    width: 3rem;
+}
