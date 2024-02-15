@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleMouseLeave() {
-        slideChangeInterval = setInterval(nextSlide, 5000);
+        slideChangeInterval = setInterval(nextSlide, 3000);
         dotUpdateInterval = setInterval(() => {
             updateDots();
-        }, 5000);
+        }, 3000);
     }
 
     function createDots() {

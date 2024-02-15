@@ -93,7 +93,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #121113;
 }
 
 .carousel_list--item img {
