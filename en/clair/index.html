@@ -23,11 +23,11 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 <body>
     <header class="menu">
         <ul class="menu_mobile mobile">
-            <li><a href="#home"><img src="../../public/icons/black/Home_Black.png" alt=""></a></li>
-            <li><a href="#about"><img src="../../public/icons/black/About_Black.png" alt=""></a></li>
-            <li><a href="#photography"><img src="../../public/icons/black/Photo_Black.png" alt=""></a></li>
-            <li><a href="#video"><img src="../../public/icons/black/Video_Black.png" alt=""></a></li>
-            <li><a href="#contact"><img src="../../public/icons/black/Contact_Black.png" alt=""></a></li>
+            <li><a href="#home"><img src="../../public/icons/home_svgrepo.com.svg" alt=""></a></li>
+            <li><a href="#about"><img src="../../public/icons/user-circle_svgrepo.com.svg" alt=""></a></li>
+            <li><a href="#photography"><img src="../../public/icons/camera-filled_svgrepo.com.svg" alt=""></a></li>
+            <li><a href="#video"><img src="../../public/icons/camera2_svgrepo.com.svg" alt=""></a></li>
+            <li><a href="#contact"><img src="../../public/icons/contact-mail_svgrepo.com.svg" alt=""></a></li>
         </ul>
 
         <!-- <ul class="menu_largescreen">
@@ -44,7 +44,13 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <img class="high_logo--img" src="../../public/icons/Final.png" alt="Logo Portfolio">
                 </a>
         
-                <a class="high_mode" href="">Button</a>
+                <div class="high_mode mode">
+                    <div class="mode_icons">
+                        <img src="../../public/icons/sun_svgrepo.com.svg" alt="">
+                        <img src="../../public/icons/moon_svgrepo.com.svg" alt="">
+                    </div>
+                    <a class="mode_button" href=""><img src="../../public/icons/change_mode_black.svg" alt=""></a>
+                </div>
             </div>
 
             <div class="header_title">
@@ -74,13 +80,11 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             <article class="about" id="about">
                 <h2>About Me</h2>
 
-                <div>
-                    <img src="../../public/img/home/1694300345935.jpg" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+                <img class="about_img1" src="../../public/img/home/1694300345935.jpg" alt="">
+                <img class="about_img2" src="../../public/img/home/me_2.png" alt="">
+                <img class="about_img3" src="../../public/img/home/toronto.png" alt="">
 
-                <p>I’m a student from the University of Franche-Comté. I am in second year of MMI (Métier du Multimédia et de l'Internet).</p>
+                <p>I'm a student from the University of Franche-Comté. I am in second year of MMI (Métier du Multimédia et de l'Internet).</p>
             </article>
         </section>
 
