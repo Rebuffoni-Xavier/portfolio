@@ -122,89 +122,111 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <div class="carouselphoto_items--slide" id="photo_item4">
                         <div class="slide_filtre"></div>
                         <a class="slide_link" href="./pages/animals.html">
-                            <h3 class="slide_link--title">Animals</h3>
+                            Animals
                         </a>
                     </div>
 
                     <div class="carouselphoto_items--slide" id="photo_item5">
                         <div class="slide_filtre"></div>
                         <a class="slide_link" href="./pages/flowers.html">
-                            <h3 class="slide_link--title">Flowers</h3>
+                            Flowers
                         </a>
                     </div>
 
                     <div class="carouselphoto_items--slide" id="photo_item6">
                         <div class="slide_filtre"></div>
                         <a class="slide_link" href="./pages/city.html">
-                            <h3 class="slide_link--title">City</h3>
+                            City
                         </a>
                     </div>
 
                     <div class="carouselphoto_items--slide" id="photo_item7">
                         <div class="slide_filtre"></div>
                         <a class="slide_link" href="./pages/sunset.html">
-                            <h3 class="slide_link--title">Sunset</h3>
+                            Sunset
                         </a>
                     </div>
                 </div>
 
-                <button class="carouselphoto_prevbutton" onclick="prevSlide()"><img src="../../public/icons/left.svg" alt=""></button>
-                <button class="carouselphoto_nextbutton" onclick="nextSlide()"><img src="../../public/icons/right.svg" alt=""></button>
+                <button class="carouselphoto_prevbutton" onclick="prevSlidePhoto()"><img src="../../public/icons/left.svg" alt=""></button>
+                <button class="carouselphoto_nextbutton" onclick="nextSlidePhoto()"><img src="../../public/icons/right.svg" alt=""></button>
 
                 <div class="carouselphoto_dots"></div>
             </article>
         </section>
 
         <section>
-            <article class="carousel-container" id="video">
-                <div class="carousel-wrapper" id="carousel">
-                    <div class="carousel-item-1">
-                        <h2>Video</h2>
-                        <p>I'm passionate about video and I have done some video projects for school.</p>
+            <article class="carouselvideo" id="video">
+                <div class="carouselvideo_items">
+                    <div class="carouselvideo_items--slide" id="video_item1">
+                        <div class="slide_filtre"></div>
+                        
+                        <div class="slide_intro">
+                            <h2>Video</h2>
+                            <p>I'm passionate about video and I have done some video projects for school.</p>
+                        </div>
                     </div>
 
-                    <div class="carousel-item-2">
-                        <h3>How do I take my video ?</h3>
+                    <div class="carouselvideo_items--slide" id="video_item2">
+                        <div class="slide_text">
+                            <h3>How do I take my video ?</h3>
 
-                        <p class="article__text">To make my videos I use the same camera than the photography project.</p>
+                            <p>To make my videos I use the same camera than the photography project.</p>
 
-                        <figure class="article__img">
-                            <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
-                            <figcaption>The camera I use to take my videos</figcaption>
-                        </figure>
+                            <figure class="video1">
+                                <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
+                                <figcaption>The camera I use to take my videos</figcaption>
+                            </figure>
 
-                        <figure class="article2__img">
-                            <img src="../../public/img/video/DaVinci_Resolve_17_logo.png" alt="Davinci Resolve Logo">
-                            <figcaption>Davinci Resolve, the software I use</figcaption>
-                        </figure>
+                            <figure class="video2">
+                                <img src="../../public/img/video/DaVinci_Resolve_17_logo.png" alt="Davinci Resolve Logo">
+                                <figcaption>Davinci Resolve, the software I use</figcaption>
+                            </figure>
     
-                        <p class="article2__text">For the videos editing I use Davinci Resolve sofware.</p>
+                            <p class="article2__text">For the videos editing I use Davinci Resolve sofware.</p>
+                        </div>
                     </div>
 
-                    <div class="carousel-item-3">
-                        <a class="link__pages" href="./pages/event.html">
-                            <h3 class="link__pages--title">Event Video</h3>
+                    <div class="carouselvideo_items--slide" id="video_item3">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/landscapes.html">
+                            Event Video
                         </a>
                     </div>
 
-                    <div class="carousel-item-4">
-                        <a class="link__pages" href="./pages/stopmotion.html">
-                            <h3 class="link__pages--title">Stop Motion Video</h3>
+                    <div class="carouselvideo_items--slide" id="video_item4">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/animals.html">
+                            Stop Motion Video
                         </a>
                     </div>
 
-                    <div class="carousel-item-5">
-                        <a class="link__pages" href="./pages/looping.html">
-                            <h3 class="link__pages--title">Looping Video</h3>
+                    <div class="carouselvideo_items--slide" id="video_item5">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/flowers.html">
+                            Looping Video
                         </a>
                     </div>
 
-                    <div class="carousel-item-6">
-                        <a class="link__pages" href="./pages/mood.html">
-                            <h3 class="link__pages--title">Mood Video</h3>
+                    <div class="carouselvideo_items--slide" id="video_item6">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/city.html">
+                            Mood Video
+                        </a>
+                    </div>
+
+                    <div class="carouselvideo_items--slide" id="video_item7">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/sunset.html">
+                            WebTV Video
                         </a>
                     </div>
                 </div>
+
+                <button class="carouselvideo_prevbutton" onclick="prevSlideVideo()"><img src="../../public/icons/left.svg" alt=""></button>
+                <button class="carouselvideo_nextbutton" onclick="nextSlideVideo()"><img src="../../public/icons/right.svg" alt=""></button>
+
+                <div class="carouselvideo_dots"></div>
             </article>
         </section>
 

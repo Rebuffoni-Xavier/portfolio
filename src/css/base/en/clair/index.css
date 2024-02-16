@@ -189,13 +189,35 @@ figcaption {
     height: 100vh;
 }
 
+.carouselvideo {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
 .carouselphoto_items {
     display: flex;
     transition: transform 0.5s ease-in-out;
     grid-column: 1/5;
 }
 
+.carouselvideo_items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    grid-column: 1/5;
+}
+
 .carouselphoto_items--slide {
+    height: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.carouselvideo_items--slide {
     height: 100vh;
     min-width: 100%;
     box-sizing: border-box;
@@ -214,15 +236,40 @@ figcaption {
     border: none;
 }
 
+.carouselvideo_prevbutton, .carouselvideo_nextbutton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
 .carouselphoto_prevbutton {
     left: 10px;
-  }
+}
+
+.carouselvideo_prevbutton {
+    left: 10px;
+}
 
 .carouselphoto_nextbutton {
     right: 10px;
 }
 
+.carouselvideo_nextbutton {
+    right: 10px;
+}
+
 .carouselphoto_dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carouselvideo_dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -239,7 +286,20 @@ figcaption {
     cursor: pointer;
 }
 
+.videodot {
+    width: 10px;
+    height: 10px;
+    background-color: #FFF8F0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 .photodot.active {
+    background-color: #92140C;
+}
+
+.videodot.active {
     background-color: #92140C;
 }
 
@@ -265,6 +325,30 @@ figcaption {
 
 #photo_item7 {
     background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
+}
+
+#video_item1 {
+    background-image: url(../../../../../public/img/video/main.jpeg);
+}
+
+#video_item3 {
+    background-image: url(../../../../../public/img/video/poster_cinemania.jpg);
+}
+
+#video_item4 {
+    background-image: url(../../../../../public/img/video/stopmotion_main.JPG);
+}
+
+#video_item5 {
+    background-image: url(../../../../../public/img/video/looping/main.png);
+}
+
+#video_item6 {
+    background-image: url(../../../../../public/img/video/mood/main.png);
+}
+
+#video_item7 {
+    background-image: url(../../../../../public/img/video/stopmotion_main.JPG);
 }
 
 .slide_filtre {
