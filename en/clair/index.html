@@ -89,53 +89,69 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         </section>
 
         <section>
-            <article class="carousel-container" id="photography">
-                <div class="carousel-wrapper" id="carousel">
-                    <div class="carousel-item-1">
-                        <h2>Photography - Infinity Photos</h2>
-                        <p>Infinity Photos is the name of the Instagram account where I post the photos I take. Through these photos, I want to show all the beauty of this Earth and all the diversity of its landscapes.</p>
+            <article class="carouselphoto" id="photography">
+                <div class="carouselphoto_items">
+                    <div class="carouselphoto_items--slide" id="photo_item1">
+                        <div class="slide_filtre"></div>
+                        
+                        <div class="slide_intro">
+                            <h2>Photography - Infinity Photos</h2>
+                            <p>Infinity Photos is the name of the Instagram account where I post the photos I take. Through these photos, I want to show all the beauty of this Earth and all the diversity of its landscapes.</p>
+                        </div>
                     </div>
 
-                    <div class="carousel-item-2">
-                        <h3>How do I take my photos ?</h3>
-                        <p class="article__text">I never plan the photos I will take in advance. When I see something beautiful, I take a picture of it and see how it looks. Sometimes I do several tests with different camera angles before making the perfect photo. I really like to walk around fifferent places and suddenly have an idea of a photo and then take it. I am particularly sensitive to landscapes, sunsets, flowers, architecture and animals which are themes that come up regularly in my photos. I take all my photos with a Canon EOS R10.</p>
+                    <div class="carouselphoto_items--slide" id="photo_item2">
+                        <div class="slide_text">
+                            <h3>How do I take my photos ?</h3>
+                            <p>I never plan the photos I will take in advance. When I see something beautiful, I take a picture of it and see how it looks. Sometimes I do several tests with different camera angles before making the perfect photo. I really like to walk around fifferent places and suddenly have an idea of a photo and then take it. I am particularly sensitive to landscapes, sunsets, flowers, architecture and animals which are themes that come up regularly in my photos. I take all my photos with a Canon EOS R10.</p>
 
-                        <figure class="article__img">
-                            <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
-                            <figcaption>The camera I use to take my photos</figcaption>
-                        </figure>
+                            <figure class="camera">
+                                <img src="../../public/img/photography/5331C009_EOS_R10_1845.jpg" alt="Camera Image">
+                                <figcaption>The camera I use to take my photos</figcaption>
+                            </figure>
+                        </div>
                     </div>
 
-                    <div class="carousel-item-3">
-                        <a class="link__pages" href="./pages/landscapes.html">
-                            <h3 class="link__pages--title">Landscapes</h3>
+                    <div class="carouselphoto_items--slide" id="photo_item3">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/landscapes.html">
+                            Landscapes
                         </a>
                     </div>
 
-                    <div class="carousel-item-4">
-                        <a class="link__pages" href="./pages/animals.html">
-                            <h3 class="link__pages--title">Animals</h3>
+                    <div class="carouselphoto_items--slide" id="photo_item4">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/animals.html">
+                            <h3 class="slide_link--title">Animals</h3>
                         </a>
                     </div>
 
-                    <div class="carousel-item-5">
-                        <a class="link__pages" href="./pages/flowers.html">
-                            <h3 class="link__pages--title">Flowers</h3>
+                    <div class="carouselphoto_items--slide" id="photo_item5">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/flowers.html">
+                            <h3 class="slide_link--title">Flowers</h3>
                         </a>
                     </div>
 
-                    <div class="carousel-item-6">
-                        <a class="link__pages" href="./pages/city.html">
-                            <h3 class="link__pages--title">City</h3>
+                    <div class="carouselphoto_items--slide" id="photo_item6">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/city.html">
+                            <h3 class="slide_link--title">City</h3>
                         </a>
                     </div>
 
-                    <div class="carousel-item-7">
-                        <a class="link__pages" href="./pages/sunset.html">
-                            <h3 class="link__pages--title">Sunset</h3>
+                    <div class="carouselphoto_items--slide" id="photo_item7">
+                        <div class="slide_filtre"></div>
+                        <a class="slide_link" href="./pages/sunset.html">
+                            <h3 class="slide_link--title">Sunset</h3>
                         </a>
                     </div>
                 </div>
+
+                <button class="carouselphoto_prevbutton" onclick="prevSlide()"><img src="../../public/icons/left.svg" alt=""></button>
+                <button class="carouselphoto_nextbutton" onclick="nextSlide()"><img src="../../public/icons/right.svg" alt=""></button>
+
+                <div class="carouselphoto_dots"></div>
             </article>
         </section>
 

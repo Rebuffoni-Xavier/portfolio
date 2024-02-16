@@ -66,3 +66,62 @@ document.addEventListener('DOMContentLoaded', function () {
 
     createDots();
 });
+
+
+// Photo Carousel //
+
+let currentIndex = 0;
+
+function showSlide(index) {
+    const wrapper = document.querySelector('.carouselphoto_items');
+    const itemWidth = document.querySelector('.carouselphoto_items--slide').offsetWidth;
+    currentIndex = index;
+
+    wrapper.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+    updateDots();
+    updateButtonVisibility();
+}
+
+function nextSlide() {
+    const totalItems = document.querySelectorAll('.carouselphoto_items--slide').length;
+    currentIndex = (currentIndex + 1) % totalItems;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    const totalItems = document.querySelectorAll('.carouselphoto_items--slide').length;
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    showSlide(currentIndex);
+}
+
+function createDots() {
+    const totalItems = document.querySelectorAll('.carouselphoto_items--slide').length;
+    const dotsContainer = document.querySelector('.carouselphoto_dots');
+
+    for (let i = 0; i < totalItems; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('photodot');
+      dot.addEventListener('click', () => showSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    updateDots();
+}
+
+function updateDots() {
+    const dots = document.querySelectorAll('.photodot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+function updateButtonVisibility() {
+    const prevBtn = document.querySelector('.carouselphoto_prevbutton');
+    const nextBtn = document.querySelector('.carouselphoto_nextbutton');
+    const totalItems = document.querySelectorAll('.carouselphoto_items--slide').length;
+
+    prevBtn.style.display = currentIndex === 0 ? 'none' : 'block';
+    nextBtn.style.display = currentIndex === totalItems - 1 ? 'none' : 'block';
+}
+createDots();
+updateButtonVisibility();

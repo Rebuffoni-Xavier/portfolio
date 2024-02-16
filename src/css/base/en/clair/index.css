@@ -18,16 +18,34 @@ h1 {
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #FFF8F0;
     font-size: 24px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
+    font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     color: #FFF8F0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #FFF8F0;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
 }
 
 .header {
@@ -133,7 +151,7 @@ p {
 
 .about {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -163,6 +181,140 @@ p {
 
 .about p {
     grid-column: 1/5;
+}
+
+.carouselphoto {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.carouselphoto_items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    grid-column: 1/5;
+}
+
+.carouselphoto_items--slide {
+    height: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.carouselphoto_prevbutton, .carouselphoto_nextbutton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.carouselphoto_prevbutton {
+    left: 10px;
+  }
+
+.carouselphoto_nextbutton {
+    right: 10px;
+}
+
+.carouselphoto_dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.photodot {
+    width: 10px;
+    height: 10px;
+    background-color: #FFF8F0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.photodot.active {
+    background-color: #92140C;
+}
+
+#photo_item1 {
+    background-image: url(../../../../../public/img/photography/main/IMG_20220803_065642.jpg);
+}
+
+#photo_item3 {
+    background-image: url(../../../../../public/img/photography/main/IMG_1435.JPG);
+}
+
+#photo_item4 {
+    background-image: url(../../../../../public/img/photography/main/IMG_2110.JPG);
+}
+
+#photo_item5 {
+    background-image: url(../../../../../public/img/photography/main/IMG_2155.JPG);
+}
+
+#photo_item6 {
+    background-image: url(../../../../../public/img/photography/main/IMG_2576.JPG);
+}
+
+#photo_item7 {
+    background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
+}
+
+.slide_filtre {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slide_intro {
+    position: absolute;
+    top: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.slide_intro h2 {
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+.slide_text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.camera {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.camera img {
+    width: 100%;
+}
+
+.slide_link {
+    position: absolute;
+    top: 47.5%;
+    z-index: 5;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* 
