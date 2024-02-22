@@ -161,31 +161,6 @@ figcaption {
     background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
 }
 
-.about {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.about h2 {
-    grid-column: 1/5;
-}
-
-.about_img1 {
-    grid-column: 1/5;
-    width: 100%;
-}
-
-.about p {
-    grid-column: 1/5;
-}
-
-
 .slide_filtre {
     z-index: 1;
     width: 100%;
@@ -265,4 +240,28 @@ figcaption {
 
 .langue_link--img {
     width: 50%;
+}
+
+.about {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.about h2 {
+    grid-column: 1/5;
+}
+
+.about_img {
+    grid-column: 1/5;
+    width: 100%;
+}
+
+.about p {
+    grid-column: 1/5;
 }
