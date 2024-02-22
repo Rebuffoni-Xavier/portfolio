@@ -12,7 +12,7 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #121113;
+    color: #FFF8F0;
     font-size: 24px;
 }
 
@@ -58,14 +58,23 @@ figcaption {
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+    z-index: 1;
 }
 
 .high_logo {
     grid-column: 1/2;
 }
 
-.high_logo--img {
+.high_logo--img, .high_mode--img {
     width: 50%;
+}
+
+.high_mode {
+    grid-column: 4/5;
+    display: flex;
+    justify-content: end;
 }
 
 .carouselphoto {
@@ -133,7 +142,7 @@ figcaption {
 }
 
 #photo_item2 {
-    background-image: url(../../../../../public/img/photography/main/IMG_1435.JPG);
+    background-image: url(../../../../../public/img/photography/main/IMG_20220803_065642.jpg);
 }
 
 #photo_item3 {
@@ -184,14 +193,19 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* .slide_intro {
+.slide_intro {
     position: absolute;
+    z-index: 2;
     top: 30%;
     margin-left: 1rem;
     margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #FFF8F0;
 }
 
-.slide_intro h2 {
+/* .slide_intro h2 {
     width: 200px;
     margin-bottom: 2rem;
 }
@@ -226,3 +240,29 @@ figcaption {
     text-decoration: none;
     text-transform: uppercase;
 } */
+
+.langue {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -3.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.langue_link {
+    grid-column: 1/5;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
+    font-size: 16px;
+}
+
+.langue_link--img {
+    width: 50%;
+}
