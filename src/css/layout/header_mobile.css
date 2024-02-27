@@ -3,7 +3,7 @@
 .mobile {
     background-color: #FFF8F0;
     position: fixed;
-    width: 100vw;
+    min-width: 100vw;
     bottom: 0;
     list-style: none;
     padding: 0;
