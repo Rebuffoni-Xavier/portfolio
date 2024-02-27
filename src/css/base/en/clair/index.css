@@ -6,7 +6,6 @@
 
 body {
     background-color: #121113;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -82,6 +81,7 @@ figcaption {
 .carouselphoto {
     position: relative;
     width: 100vw;
+    overflow: hidden;
 }
 
 .carouselphoto_items {
