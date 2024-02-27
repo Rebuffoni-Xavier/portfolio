@@ -11,9 +11,8 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
     <title>Xavier.R - Accueil</title>
 
     <link rel="stylesheet" href="../../src/css/base/en/clair/index.css">
-    <link rel="stylesheet" href="../../src/css/layout/header_mobile.css">
-    <link rel="stylesheet" href="../../src/css/layout/footer.css">
-    <link rel="stylesheet" href="../../src/css/components/button.css">
+    <link rel="stylesheet" href="../../src/css/layout/header_sombre.css">
+    <link rel="stylesheet" href="../../src/css/layout/footer_sombre.css">
 
     <link rel="icon" href="../../public/icons/Final.png">
 
@@ -139,6 +138,44 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
         </section>
 
         <section>
+            <article class="video" id="video">
+                <h2>Video</h2>
+
+                <div class="video_event">
+                    <div class="video_filtre"></div>
+
+                    <a href="" class="video_link">Event Video</a>
+                </div>
+
+                <div class="video_stopmotion">
+                    <div class="video_filtre"></div>
+
+                    <a href="" class="video_link">Stop Motion Video</a>
+                </div>
+
+                <div class="video_mood">
+                    <div class="video_filtre"></div>
+
+                    <a href="" class="video_link">Mood Video</a>
+                </div>
+
+                <div class="video_adventure">
+                    <div class="video_filtre"></div>
+
+                    <a href="" class="video_link">Adventure Video</a>
+                </div>
+
+                <!-- <div class="video_sunset">
+                    <div class="video_filtre"></div>
+
+                    <a href="" class="video_link">Sunset</a>
+                </div> -->
+
+                <a href="" class="video_button">
+                    How I take my videos ?
+                    <img src="../../public/icons/right.svg" alt="">
+                </a>
+            </article>
         </section>
 
         <section>
@@ -149,16 +186,14 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
     </main>
 
     <footer class="footer">
-        <section>
-            <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Photography</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Videos</a></li>
-            </ul>
+        <section class="footer_page page">
+            <a href="#about" class="page_about">About Me</a>
+            <a href="#photography" class="page_photography">Photography</a>
+            <a href="#contact" class="page_contact">Contact</a>
+            <a href="#video" class="page_video">Video</a>
         </section>
 
-        <sections class="reseaux">
+        <sections class="footer_reseaux reseaux">
             <ul class="reseaux_link">
                 <li><a href="https://www.instagram.com/infinity___photos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img class="reseaux_link--img1" src="../../public/icons/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
                 <li><a href="#"><img class="reseaux_link--img2" src="../../public/icons/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
@@ -167,7 +202,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </ul>
         </sections>
 
-        <sections class="credits">&copy; Xavier REBUFFONI - 2023</sections>
+        <sections class="footer_credits credits">&copy; Xavier REBUFFONI - 2023</sections>
     </footer>
 
     <script src="../../src/js/home/home.js"></script>

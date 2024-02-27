@@ -61,7 +61,7 @@ figcaption {
     margin-right: 1rem;
     margin-top: 1rem;
     position: absolute;
-    z-index: 1;
+    z-index: 7;
 }
 
 .high_logo {
@@ -82,6 +82,7 @@ figcaption {
     position: relative;
     width: 100vw;
     overflow: hidden;
+    z-index: 6;
 }
 
 .carouselphoto_items {
@@ -207,7 +208,7 @@ figcaption {
     margin-right: 1rem;
     margin-top: -4.5rem;
     position: absolute;
-    z-index: 1;
+    z-index: 7;
 }
 
 .langue_link {
@@ -251,19 +252,20 @@ figcaption {
     grid-column: 1/5;
 }
 
-.photography {
+.photography, .video {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 4rem;
 }
 
-.photography h2 {
+.photography h2, .video h2 {
     grid-column: 1/5;
 }
 
-.photography_landscapes, .photography_flowers, .photography_sunset {
+.photography_landscapes, .photography_flowers, .photography_sunset, .video_event, .video_mood {
     position: relative;
     grid-column: 1/4;
     height: 246px;
@@ -272,7 +274,7 @@ figcaption {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.photography_animals, .photography_city {
+.photography_animals, .photography_city, .video_stopmotion, .video_adventure {
     position: relative;
     grid-column: 2/5;
     height: 246px;
@@ -305,14 +307,33 @@ figcaption {
     margin-top: -70px;
 }
 
-.photography_filtre {
+.video_event {
+    background-image: url(../../../../../public/img/home/IMG_6149.JPG);
+}
+
+.video_stopmotion {
+    background-image: url(../../../../../public/img/home/stopmotion_main.JPG);
+    margin-top: -70px;
+}
+
+.video_mood {
+    background-image: url(../../../../../public/img/home/mood_main.png);
+    margin-top: -70px;
+}
+
+.video_adventure {
+    background-image: url(../../../../../public/img/home/adventure_movie.png);
+    margin-top: -70px;
+}
+
+.photography_filtre, .video_filtre {
     z-index: 1;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.35);
 }
 
-.photography_link {
+.photography_link, .video_link {
     position: absolute;
     display: flex;
     align-items: center;
@@ -320,7 +341,7 @@ figcaption {
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 5;
+    z-index: 3;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -330,7 +351,7 @@ figcaption {
     text-transform: uppercase;
 }
 
-.photography_button {
+.photography_button, .video_button {
     grid-column: 2/5;
     height: 61px;
     background-color: #FFF8F0;
@@ -339,7 +360,7 @@ figcaption {
     text-decoration: none;
     color: #121113;
     display: flex;
-    gap: 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 0.3rem;
 }
