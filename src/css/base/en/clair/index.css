@@ -329,3 +329,17 @@ figcaption {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.photography_button {
+    grid-column: 2/5;
+    height: 61px;
+    background-color: #FFF8F0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #121113;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
