@@ -101,7 +101,7 @@ figcaption {
 
 .carouselphoto_dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -205,7 +205,7 @@ figcaption {
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
     position: absolute;
     z-index: 1;
 }
@@ -226,8 +226,6 @@ figcaption {
 }
 
 .about {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -251,4 +249,83 @@ figcaption {
 
 .about p {
     grid-column: 1/5;
+}
+
+.photography {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.photography h2 {
+    grid-column: 1/5;
+}
+
+.photography_landscapes, .photography_flowers, .photography_sunset {
+    position: relative;
+    grid-column: 1/4;
+    height: 246px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.photography_animals, .photography_city {
+    position: relative;
+    grid-column: 2/5;
+    height: 246px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.photography_landscapes {
+    background-image: url(../../../../../public/img/home/IMG_20220803_065642.jpg);
+}
+
+.photography_animals {
+    background-image: url(../../../../../public/img/home/IMG_1604.JPG);
+    margin-top: -70px;
+}
+
+.photography_flowers {
+    background-image: url(../../../../../public/img/home/IMG_2176.JPG);
+    margin-top: -70px;
+}
+
+.photography_city {
+    background-image: url(../../../../../public/img/home/IMG_5975.JPG);
+    margin-top: -70px;
+}
+
+.photography_sunset {
+    background-image: url(../../../../../public/img/home/IMG_5811.JPG);
+    margin-top: -70px;
+}
+
+.photography_filtre {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.photography_link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
