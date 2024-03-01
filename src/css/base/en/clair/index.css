@@ -124,7 +124,7 @@ figcaption {
 
 .carouselphoto {
     position: relative;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     z-index: 2;
 }
