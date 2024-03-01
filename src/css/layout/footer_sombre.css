@@ -3,11 +3,12 @@
 .footer {
     position: relative;
     background-color: #FFF8F0;
-    width: 100vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 5rem;
     z-index: 7;
+    left: 0;
+    right: 0;
 }
 
 .page {
@@ -66,16 +67,4 @@
     font-style: italic;
     font-weight: 400;
     font-size: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    .reseaux_link--img1 {
-        width: 1.5rem;
-    }
-    .reseaux_link--img2 {
-        width: 2rem;
-    }
-    .credits {
-        font-size: 12px;
-    }
 }

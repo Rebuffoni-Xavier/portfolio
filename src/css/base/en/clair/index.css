@@ -55,7 +55,7 @@ figcaption {
 
 .intro {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(18, 17, 19, 0.5);
     z-index: 3;
     height: 100vh;
     display: grid;
@@ -88,6 +88,10 @@ figcaption {
     width: 50%;
 }
 
+.high_menu {
+    display: none;
+}
+
 .intro_text {
     grid-column: 1/5;
     display: flex;
@@ -95,32 +99,6 @@ figcaption {
     justify-content: center;
     gap: 1rem;
 }
-
-/* .nav {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-}
-
-.nav_items {
-    grid-column: 1/5;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-}
-
-.nav_items--text a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #FFF8F0;
-    font-size: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-} */
 
 .langue {
     grid-column: 1/5;
@@ -141,46 +119,8 @@ figcaption {
 }
 
 .langue_link--img {
-    width: 9%;
+    width: 34px;
 }
-
-/* .high {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    position: absolute;
-    z-index: 8;
-}
-
-.high_logo {
-    grid-column: 1/2;
-}
-
-.high_logo--img, .high_mode--img {
-    width: 50%;
-}
-
-.high_mode {
-    grid-column: 4/5;
-    display: flex;
-    justify-content: end;
-}
-
-.slide_intro {
-    position: absolute;
-    min-height: 100vh;
-    min-width: 100vw;
-    z-index: 7;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: #FFF8F0;
-    justify-content: center;
-} */
 
 .carouselphoto {
     position: relative;
@@ -249,68 +189,6 @@ figcaption {
     background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
 }
 
-/* .slide_intro h2 {
-    width: 200px;
-    margin-bottom: 2rem;
-}
-
-.slide_text {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
-
-.camera {
-    width: 50%;
-    margin: auto;
-    margin-top: 1rem;
-}
-
-.camera img {
-    width: 100%;
-}
-
-.slide_link {
-    position: absolute;
-    top: 47.5%;
-    z-index: 5;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #FFF8F0;
-    font-size: 24px;
-    text-decoration: none;
-    text-transform: uppercase;
-} */
-
-/* .langue {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -4.5rem;
-    position: absolute;
-    z-index: 8;
-}
-
-.langue_link {
-    grid-column: 1/5;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #FFF8F0;
-    font-size: 16px;
-}
-
-.langue_link--img {
-    width: 50%;
-} */
-
 .about {
     height: 100vh;
     display: grid;
@@ -356,7 +234,7 @@ figcaption {
     height: 246px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
 }
 
 .photography_animals, .photography_city, .video_stopmotion, .video_adventure {
@@ -365,7 +243,7 @@ figcaption {
     height: 246px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
 }
 
 .photography_landscapes {
@@ -448,4 +326,175 @@ figcaption {
     align-items: center;
     justify-content: space-between;
     padding: 0 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+        left: 0;
+        right: 0;
+    }
+    
+    .high {
+        padding-top: 1rem;
+        grid-column: 1/13;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .high_logo--img {
+        width: 40px;
+    }
+
+    .high_mode {
+        display: none;
+    }
+
+    .high_menu {
+        grid-column: 6/13;
+        display: flex;
+        gap: 2rem;
+        justify-content: end;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .high_menu--items a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #FFF8F0;
+    }
+
+    .high_menu--items a:hover {
+        font-weight: 900;
+        color: #92140C;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .high_menu--img {
+        width: 40px;
+    }
+    
+    .intro_text {
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1rem;
+    }
+    
+    .langue {
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    
+    .langue_link {
+        grid-column: 1/5;
+        font-size: 14px;
+    }
+    
+    .langue_link--img {
+        width: 40px;
+    }
+
+    .about {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 6rem;
+    }
+    
+    .about h2 {
+        grid-column: 3/11;
+    }
+    
+    .about_img {
+        grid-column: 4/10;
+    }
+    
+    .about p {
+        grid-column: 3/11;
+    }
+
+    .photography, .video {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .photography h2, .video h2 {
+        grid-column: 3/11;
+    }
+    
+    .photography_landscapes, .photography_flowers, .photography_sunset, .video_event, .video_mood {
+        grid-column: 3/8;
+        height: 480px;
+        filter: grayscale(100%);
+    }
+    
+    .photography_animals, .photography_city, .video_stopmotion, .video_adventure {
+        grid-column: 6/11;
+        height: 480px;
+        filter: grayscale(100%);
+    }
+
+    .photography_animals, .photography_animals, .photography_flowers, .photography_city, .photography_sunset, .video_stopmotion, .video_mood, .video_adventure {
+        margin-top: -100px;
+    }
+
+    .photography_filtre, .video_filtre {
+        background-color: transparent;
+    }
+
+    .photography_landscapes:hover, .photography_animals:hover, .photography_flowers:hover, .photography_city:hover, .photography_sunset:hover, .video_event:hover, .video_stopmotion:hover, .video_mood:hover, .video_adventure:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+
+        .photography_filtre, .video_filtre {
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    .photography_button, .video_button {
+        grid-column: 6/11;
+        padding: 0 1rem;
+    }
+
+    .photography_button:hover, .video_button:hover {
+        color: #92140C;
+        font-weight: 600;
+        box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
+        transition: all 0.3s ease-in-out;
+    }
 }

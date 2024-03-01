@@ -15,6 +15,59 @@
     z-index: 4;
 }
 
-.mobile img {
-    fill: black;
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        background-color: #FFF8F0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .desktop_logo--img {
+        width: 50px;
+    }
+
+    .desktop_list {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .desktop_list--items a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #121113;
+    }
+
+    .desktop_list--items a:hover {
+        font-weight: 900;
+        color: #92140C;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .desktop_list--img {
+        width: 40px;
+    }
 }
