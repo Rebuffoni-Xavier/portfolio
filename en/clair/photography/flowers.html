@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Copyright 1999-2020. Plesk International GmbH. All rights reserved.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photography - Flowers</title>
+
+    <link rel="stylesheet" href="../../src/css/photography/pages.css">
+    <link rel="stylesheet" href="../../src/css/layout/header_pages.css">
+    <link rel="stylesheet" href="../../src/css/layout/footer.css">
+
+    <link rel="icon" href="../../public/icons/Final.png">
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../../home.html">
+            <img class="header_logo" src="../../public/icons/Final.png" alt="Logo">
+        </a>
+
+        <button aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header__btn"
+            >
+                <img src="../../public/icons/hamburger-menu-svgrepo-com.svg" alt="logo menu" class="header__btn--menu">
+        </button>
+
+        <nav id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.800ms
+            class="header__menu menu"
+        >
+            <button class="menu__close" @click="menuIsOpen= ! menuIsOpen">
+                <img class="menu__close--img" src="../../public/icons/cross-svgrepo-com.svg" alt="Image bouton pour fermer le menu">
+            </button>
+
+            <ul class="menu__items items">
+                <li class="items__li1"><a href="../index.html" class="items__li1--title">Photography</a></li>
+                <li class="items__li2"><a href="../../video/index.html" class="items__li2--title">Video</a></li>
+                <li class="items__li4"><a href="../../contact/index.html" class="items__li4--title">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="menu_largescreen">
+            <li class="items__li1"><a href="../index.html" class="items__li1--title">Photography</a></li>
+            <li class="items__li2"><a href="../../video/index.html" class="items__li2--title">Video</a></li>
+            <li class="items__li4"><a href="../../contact/index.html" class="items__li4--title">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <header class="principal__flowers">
+            <div class="principal__flowers--intro intro">
+                <h1>Flowers</h1>
+                <p>For these photos  I use the big zoom lens just like for the animals and I put the priority aperture mode. To have the blur it’s excatly the same settings than animals with a large aperture (~4.5) and the same focus on the center of the flower. In contrary of the animals photos I don’t have to put the full manually mode because flowers are fixe so it’s not necassary to adjust the speed.</p>
+            </div>
+
+            <div class="principal_flowers--down down">
+                <a class="down_link" href="#gallery">
+                    <img class="down_link--img" src="../../public/icons/down.svg" alt="Down Arrow">
+                </a>
+            </div>
+        </header>
+
+        <section class="gallery" id="gallery"></section>
+    </main>
+
+    <footer class="footer">
+        <sections class="reseaux">
+            <ul class="reseaux_link">
+                <li><a href="https://www.instagram.com/infinity___photos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img class="reseaux_link--img1" src="../../public/icons/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img class="reseaux_link--img2" src="../../public/icons/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+                <li><a href="mailto:xav.rebuffoni@gmail.com"><img class="reseaux_link--img2" src="../../public/icons/email-1-svgrepo-com.svg" alt="Email"></a></li>
+                <li><a href="https://www.linkedin.com/in/xavier-rebuffoni-786128256/"><img class="reseaux_link--img1" src="../../public/icons/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+            </ul>
+        </sections>
+
+        <sections class="credits">&copy; Xavier REBUFFONI - 2023</sections>
+    </footer>
+</body>
+<script src="../../src/js/photography/flower.js"></script>
+</html>

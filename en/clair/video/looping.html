@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr"
+x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Copyright 1999-2020. Plesk International GmbH. All rights reserved.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video - Looping Video</title>
+
+    <link rel="stylesheet" href="../../src/css/video/pages.css">
+    <link rel="stylesheet" href="../../src/css/layout/header_pages.css">
+    <link rel="stylesheet" href="../../src/css/layout/footer.css">
+
+    <link rel="icon" href="../../public/icons/Final.png">
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="../../home.html">
+            <img class="header_logo" src="../../public/icons/Final.png" alt="Logo">
+        </a>
+
+        <button aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header__btn"
+            >
+                <img src="../../public/icons/hamburger-menu-svgrepo-com.svg" alt="logo menu" class="header__btn--menu">
+        </button>
+
+        <nav id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.800ms
+            class="header__menu menu"
+        >
+            <button class="menu__close" @click="menuIsOpen= ! menuIsOpen">
+                <img class="menu__close--img" src="../../public/icons/cross-svgrepo-com.svg" alt="Image bouton pour fermer le menu">
+            </button>
+
+            <ul class="menu__items items">
+                <li class="items__li1"><a href="../../photography/index.html" class="items__li1--title">Photography</a></li>
+                <li class="items__li2"><a href="../index.html" class="items__li2--title">Video</a></li>
+                <li class="items__li4"><a href="../../contact/index.html" class="items__li4--title">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="menu_largescreen">
+            <li class="items__li1"><a href="../../photography/index.html" class="items__li1--title">Photography</a></li>
+            <li class="items__li2"><a href="../index.html" class="items__li2--title">Video</a></li>
+            <li class="items__li4"><a href="../../contact/index.html" class="items__li4--title">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <header class="principal__looping">
+            <div class="principal__looping--intro intro">
+                <h1>Looping Videos</h1>
+                <p>These videos are a project I had to do for the video editing class in Vanier College. It was also a new project for me and I learn a lot of things doing this project.</p>
+            </div>
+
+            <div class="principal_looping--down down">
+                <a class="down_link" href="#section1">
+                    <img class="down_link--img" src="../../public/icons/down.svg" alt="Down Arrow">
+                </a>
+            </div>
+        </header>
+
+        <section class="section1" id="section1">
+            <article class="section1_video video">
+                <h2>My videos</h2>
+
+                <video class="video_1" controls>
+                    <source src="../../public/video/Xavier-R_Flower_Edit.mp4" type="video/mp4">
+                </video>
+
+                <video class="video_2" controls>
+                    <source src="../../public/video/Xavier-R_Sing_Edit.mp4" type="video/mp4">
+                </video>
+            </article>
+        </section>
+
+        <section class="section2">
+            <h2>How I made my video ?</h2>
+
+            <article class="section2_shooting shooting">
+                <h3>Shooting</h3>
+
+                <p>To make these videos I just shoot a short video with a main elements and that's all because the looping effects is made in editing part of the project.</p>
+
+                <div class="shooting_gallery2 gallery2">
+                    <video controls>
+                        <source src="../../public/video/flower_base.MP4" type="video/mp4">
+                    </video>
+
+                    <video controls>
+                        <source src="../../public/video/sing_base.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="gallery_legend">Base Videos</p>
+            </article>
+
+            <article class="section2_editing editing">
+                <h3>Editing</h3>
+
+                <p>For this project, the editing part was harder because to do a looping just for a part of the video, we have to draw around the main subject with the colors option in Davinci Resolve. Then, we have to cut the part we have drawn and duplicate the base video. After that we have two videos, one without the main subject and the other without any change. To have the main subject moving and the rest fixed, we have to freeze the video without the main subject and put it hover the base video (vice-versa if you want to freeze the main subject and move the rest). Finally, to loop the video we just have to duplicate the previous editing, put the second one after the first one and put the second one in the other way.</p>
+
+                <div class="editing_gallery2 gallery2">
+                    <img src="../../public/img/video/looping/timeline_flower.png" alt="Timeline Flower">
+                    <img src="../../public/img/video/looping/timeline_sing.png" alt="Timeline Sing">
+                </div>
+
+                <p class="gallery_legend">Videos timeline for the first editing part</p>
+
+                <div class="editing_gallery2 gallery2">
+                    <img src="../../public/img/video/looping/timeline_flower_looping.png" alt="Timeline Flower Looping">
+                    <img src="../../public/img/video/looping/timeline_sing_looping.png" alt="Timeline Sing Looping">
+                </div>
+
+                <p class="gallery_legend">Videos timeline for the looping part</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <sections class="reseaux">
+            <ul class="reseaux_link">
+                <li><a href="https://www.instagram.com/infinity___photos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img class="reseaux_link--img1" src="../../public/icons/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img class="reseaux_link--img2" src="../../public/icons/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+                <li><a href="mailto:xav.rebuffoni@gmail.com"><img class="reseaux_link--img2" src="../../public/icons/email-1-svgrepo-com.svg" alt="Email"></a></li>
+                <li><a href="https://www.linkedin.com/in/xavier-rebuffoni-786128256/"><img class="reseaux_link--img1" src="../../public/icons/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+            </ul>
+        </sections>
+
+        <sections class="credits">&copy; Xavier REBUFFONI - 2023</sections>
+    </footer>
+</body>
+</html>

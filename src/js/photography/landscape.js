@@ -1,5 +1,5 @@
 const gallery = document.querySelector('.gallery');
-fetch('../../src/json/photography/landscape.json')
+fetch('../../../src/json/photography/landscape.json')
     .then(response => response.json())
     .then(data => {
        console.log(data);
