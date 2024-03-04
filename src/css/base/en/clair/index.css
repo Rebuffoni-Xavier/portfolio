@@ -96,7 +96,6 @@ figcaption {
     grid-column: 1/5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 }
 
@@ -190,12 +189,13 @@ figcaption {
 }
 
 .about {
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .about h2 {
@@ -293,7 +293,7 @@ figcaption {
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(18, 17, 19, 0.35);
 }
 
 .photography_link, .video_link {
@@ -402,7 +402,6 @@ figcaption {
         grid-column: 1/13;
         display: flex;
         flex-direction: column;
-        justify-content: start;
         gap: 1rem;
     }
     
@@ -429,7 +428,7 @@ figcaption {
         gap: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
-        margin-top: 6rem;
+        padding-top: 6rem;
     }
     
     .about h2 {
@@ -437,11 +436,17 @@ figcaption {
     }
     
     .about_img {
-        grid-column: 4/10;
+        grid-column: 3/8;
     }
     
     .about p {
-        grid-column: 3/11;
+        grid-column: 6/11;
+        margin-top: -100px;
+        background-color: rgba(0, 0, 0, 0.35);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 480px;
     }
 
     .photography, .video {
@@ -450,6 +455,7 @@ figcaption {
         gap: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+        padding-top: 6rem;
     }
     
     .photography h2, .video h2 {
@@ -482,7 +488,7 @@ figcaption {
         transition: all 0.5s ease-in-out;
 
         .photography_filtre, .video_filtre {
-            background-color: rgba(0, 0, 0, 0.35);
+            background-color: rgba(18, 17, 19, 0.35);
         }
     }
 
