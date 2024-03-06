@@ -314,18 +314,72 @@ figcaption {
     text-transform: uppercase;
 }
 
-.photography_button, .video_button {
-    grid-column: 2/5;
+.button {
+    grid-column: 1/5;
     height: 61px;
     background-color: #FFF8F0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    text-decoration: none;
+    font-size: 14px;
     color: #121113;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0.3rem;
+    border: none;
+}
+
+.button_svg {
+    padding-left: 1rem;
+}
+
+.button_svg path {
+    stroke: #121113;
+}
+
+.photography_how {
+    display: none;
+    grid-column: 1/5;
+    background-color: #FFF8F0;
+    margin-top: -1rem;
+    height: 419px;
+}
+
+.video_how {
+    display: none;
+    grid-column: 1/5;
+    background-color: #FFF8F0;
+    margin-top: -1rem;
+    height: 419px;
+}
+
+.photography_how p {
+    color: #121113;
+    padding: 1rem;
+}
+
+.video_how p {
+    color: #121113;
+    padding: 1rem;
+}
+
+.visible {
+    display: block;
+}
+
+#photobutton.clicked, #videobutton.clicked {
+    transition: all 0.2s ease-in-out;
+    background-color: #121113;
+    color: #FFF8F0;
+    border: solid 1px #FFF8F0;
+
+    .button_svg {
+        transition: all 0.2s ease-in-out;
+        transform: rotate(90deg);
+    }
+
+    .button_svg path {
+        stroke: #FFF8F0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -492,15 +546,40 @@ figcaption {
         }
     }
 
-    .photography_button, .video_button {
+    .photography_button {
         grid-column: 6/11;
-        padding: 0 1rem;
     }
 
-    .photography_button:hover, .video_button:hover {
-        color: #92140C;
-        font-weight: 600;
-        box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
-        transition: all 0.3s ease-in-out;
+    .photography_how {
+        grid-column: 6/11;
+    }
+
+    .video_button {
+        grid-column: 3/8;
+    }
+
+    .video_how {
+        grid-column: 3/8;
+    }
+
+    #photobutton:hover, #videobutton:hover {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        background-color: #121113;
+        color: #FFF8F0;
+        border: solid 1px #FFF8F0;
+    
+        .button_svg {
+            transition: all 0.2s ease-in-out;
+            transform: rotate(90deg);
+        }
+    
+        .button_svg path {
+            stroke: #FFF8F0;
+        }
+    }
+    
+    #photobutton:hover + .photography_how, #videobutton:hover + .video_how {
+        display: block;
     }
 }

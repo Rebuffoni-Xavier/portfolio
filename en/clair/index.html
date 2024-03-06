@@ -14,7 +14,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
     <link rel="stylesheet" href="../../src/css/layout/header_sombre.css">
     <link rel="stylesheet" href="../../src/css/layout/footer_sombre.css">
 
-    <link rel="icon" href="../../public/icons/Final.png">
+    <link rel="icon" href="../../public/icons/final.svg">
 
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
@@ -31,7 +31,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
 
         <div class="menu_desktop desktop">
             <a class="desktop_logo" href="/index.html">
-                <img class="desktop_logo--img" src="../../public/icons/Final.png" alt="Logo Portfolio">
+                <img class="desktop_logo--img" src="../../public/icons/final.svg" alt="Logo Portfolio">
             </a>
 
             <ul class="desktop_list">
@@ -50,7 +50,7 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             <div class="header_intro intro">
                 <div class="intro_high high">
                     <a class="high_logo" href="/index.html">
-                        <img class="high_logo--img" src="../../public/icons/Final.png" alt="Logo Portfolio">
+                        <img class="high_logo--img" src="../../public/icons/final.svg" alt="Logo Portfolio">
                     </a>
 
                     <ul class="high_menu">
@@ -149,10 +149,16 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <a href="" class="photography_link">Sunset</a>
                 </div>
 
-                <a href="" class="photography_button">
+                <button class="photography_button button" id="photobutton">
                     How I take my photos ?
-                    <img src="../../public/icons/right.svg" alt="">
-                </a>
+                    <svg class="button_svg" width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.58334 3L13 13.4167L2.58334 23.8333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="photography_how" id="photohow">
+                    <p>I take my photos whith camera Canon EOS R10</p>
+                </div>
             </article>
         </section>
 
@@ -190,10 +196,16 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
                     <a href="" class="video_link">Sunset</a>
                 </div> -->
 
-                <a href="" class="video_button">
+                <button class="video_button button" id="videobutton">
                     How I take my videos ?
-                    <img src="../../public/icons/right.svg" alt="">
-                </a>
+                    <svg class="button_svg" width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.58334 3L13 13.4167L2.58334 23.8333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="video_how" id="videohow">
+                    <p>I take my videos whith camera Canon EOS R10</p>
+                </div>
             </article>
         </section>
 
