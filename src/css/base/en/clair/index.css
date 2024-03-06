@@ -247,45 +247,45 @@ figcaption {
 }
 
 .photography_landscapes {
-    background-image: url(../../../../../public/img/home/IMG_20220803_065642.jpg);
+    background-image: url(../../../../../public/img/home/landscapes.jpg);
 }
 
 .photography_animals {
-    background-image: url(../../../../../public/img/home/IMG_1604.JPG);
+    background-image: url(../../../../../public/img/home/animals.jpg);
     margin-top: -70px;
 }
 
 .photography_flowers {
-    background-image: url(../../../../../public/img/home/IMG_2176.JPG);
+    background-image: url(../../../../../public/img/home/flowers.jpg);
     margin-top: -70px;
 }
 
 .photography_city {
-    background-image: url(../../../../../public/img/home/IMG_5975.JPG);
+    background-image: url(../../../../../public/img/home/city.jpg);
     margin-top: -70px;
 }
 
 .photography_sunset {
-    background-image: url(../../../../../public/img/home/IMG_5811.JPG);
+    background-image: url(../../../../../public/img/home/sunset.jpg);
     margin-top: -70px;
 }
 
 .video_event {
-    background-image: url(../../../../../public/img/home/IMG_6149.JPG);
+    background-image: url(../../../../../public/img/home/event_video.jpg);
 }
 
 .video_stopmotion {
-    background-image: url(../../../../../public/img/home/stopmotion_main.JPG);
+    background-image: url(../../../../../public/img/home/stopmotion_main.jpg);
     margin-top: -70px;
 }
 
 .video_mood {
-    background-image: url(../../../../../public/img/home/mood_main.png);
+    background-image: url(../../../../../public/img/home/mood_main.jpg);
     margin-top: -70px;
 }
 
 .video_adventure {
-    background-image: url(../../../../../public/img/home/adventure_movie.png);
+    background-image: url(../../../../../public/img/home/adventure_movie.jpg);
     margin-top: -70px;
 }
 
