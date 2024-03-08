@@ -149,23 +149,6 @@ p {
     background-image: url(../../../public/img/photography/main/IMG_1850.JPG);
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 2rem;
-    width: 100%;
-}
-
-.main_img {
-    width: 335px;
-    height: auto;
-    margin: auto;
-    padding: 0;
-    margin: 0;
-}
-
 .how {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -183,8 +166,347 @@ p {
     grid-column: 1/5;
 }
 
-@media screen and (max-width: 500px) {
-    .intro p {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.main_img {
+    width: 335px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.main_img:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+}
+
+.button_fullscreen {
+    grid-column: 2/4;
+    background-color: #FFF8F0;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #121113;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.otherphotos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+}
+
+.otherphotos h2 {
+    grid-column: 1/5;
+}
+
+.othercarrousel {
+    grid-column: 1/5;
+    position: relative;
+    overflow: hidden;
+    }
+      
+    .othercarrousel_btn {
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background-color: #121113;
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: #FFF8F0;
+        cursor: pointer;
+    }
+      
+    .othercarrousel_btn-avant {
+        left: 0;
+    }
+      
+    .othercarrousel_btn-apres {
+        right: 0;
+    }
+
+.othercarrousel_parent-ecrans {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
+    flex: none;
+    width: 100%;
+    height: 223px;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+}
+
+.othercarrousel_animals {
+    background-image: url(../../../public/img/photography/petites/animals/IMG_1604.jpg);
+}
+
+.othercarrousel_flowers {
+    background-image: url(../../../public/img/photography/petites/flowers/IMG_2176.jpg);
+}
+
+.othercarrousel_city {
+    background-image: url(../../../public/img/photography/petites/city/IMG_4601.jpg);
+}
+
+.othercarrousel_sunset {
+    background-image: url(../../../public/img/photography/petites/sunset/IMG_5811.jpg);
+}
+
+.othercontent {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 17, 19, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.othercontent a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.carrousel {
+    display: none;
+    box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    }
+
+    .carrousel_close {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.3rem;
+        background-color: transparent;
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        background-color: #92140C;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+    }
+
+    .carrousel_close--svg {
         width: 100%;
+        cursor: pointer;
+    }
+
+    .carrousel_close--svg path {
+        fill: #FFF8F0;
+    }
+      
+    .carrousel_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background-color: #121113;
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: #FFF8F0;
+        cursor: pointer;
+    }
+      
+    .carrousel_btn-avant {
+        left: 0;
+    }
+      
+    .carrousel_btn-apres {
+        right: 0;
+    }
+
+.carrousel_parent-ecrans {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#ecran-1, #ecran-2, #ecran-3, #ecran-4, #ecran-5, #ecran-6, #ecran-7, #ecran-8, #ecran-9, #ecran-10 {
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+}
+
+.carrousel_landscape1 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_0528.jpg);
+}
+
+.carrousel_landscape2 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_0822.jpg);
+}
+
+.carrousel_landscape3 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_0860.jpg);
+}
+
+.carrousel_landscape4 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_0876.jpg);
+}
+
+.carrousel_landscape5 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_1296.jpg);
+}
+
+.carrousel_landscape6 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_1371.jpg);
+}
+
+.carrousel_landscape7 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_1435.jpg);
+}
+
+.carrousel_landscape8 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_3595.jpg);
+}
+
+.carrousel_landscape9 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_4543.jpg);
+}
+
+.carrousel_landscape10 {
+    background-image: url(../../../public/img/photography/grandes/landscapes/IMG_5571.jpg);
+}
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+        left: 0;
+        right: 0;
+    }
+    
+    .high {
+        padding-top: 1rem;
+        grid-column: 1/13;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .high_logo--img {
+        width: 40px;
+    }
+
+    .high_mode {
+        display: none;
+    }
+
+    .high_menu {
+        grid-column: 6/13;
+        display: flex;
+        gap: 2rem;
+        justify-content: end;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .high_menu--items a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #FFF8F0;
+    }
+
+    .high_menu--items a:hover {
+        font-weight: 900;
+        color: #92140C;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .high_menu--img {
+        width: 40px;
+    }
+    
+    .intro_text {
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .langue {
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    
+    .langue_link {
+        grid-column: 1/5;
+        font-size: 14px;
+    }
+    
+    .langue_link--img {
+        width: 40px;
     }
 }

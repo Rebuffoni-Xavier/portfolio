@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr"
-x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
->
+<html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="copyright" content="Copyright 1999-2020. Plesk International GmbH. All rights reserved.">
@@ -15,6 +14,8 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
     <link rel="stylesheet" href="../../../src/css/layout/footer_sombre.css">
 
     <link rel="icon" href="../../../public/icons/final.svg">
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <header class="menu">
@@ -81,12 +82,111 @@ x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"
             </div>
         </header>
 
-        <section class="gallery" id="gallery"></section>
-
         <section class="how">
             <h2>How do I take these photos ?</h2>
 
             <p>To have all these elements on my image I use a large zoom lens or a wide angle lens and I put the priority aperture mode. To have all the elements clear I put the focus on all the photo and I take the photo with a little aperture (~16).</p>
+        </section>
+
+        <section class="gallery" id="gallery"></section>
+
+        <section class="button">
+            <button id="fullscreen" class="button_fullscreen">Full Screen</button>
+        </section>
+
+        <section class="otherphotos">
+            <h2>Other Photos</h2>
+
+            <div id="other" class="othercarrousel" x-data="{hrefCourant: '#ecran-1',}">
+
+                <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
+                  @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                &lt; 
+                </button>
+    
+                <button class="othercarrousel_btn othercarrousel_btn-apres" aria-label="slide suivant" 
+                  @click="console.log('apres');$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                &gt;
+                </button>
+    
+                <div class="othercarrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                                [...$refs.parent.children]
+                                .find(e=>e.getBoundingClientRect().x>=0)
+                                                    ">
+    
+                    <div class="othercarrousel_animals">
+                        <div class="othercontent"><a href="./photography/landscapes.html">Animals</a></div>
+                    </div>
+                    
+                    <div class="othercarrousel_flowers">
+                        <div class="othercontent"><a href="./photography/landscapes.html">Flowers</a></div>
+                    </div>
+                    
+                    <div class="othercarrousel_city">
+                        <div class="othercontent"><a href="./photography/landscapes.html">City</a></div>
+                    </div>
+    
+                    <div class="othercarrousel_sunset">
+                        <div class="othercontent"><a href="./photography/landscapes.html">Sunset</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrousel" class="pages__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button id="close" class="carrousel_close">
+                <svg class="carrousel_close--svg" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z"/>
+                </svg>
+            </button>
+
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+              @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+            &lt; 
+            </button>
+
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" 
+              @click="console.log('apres');$refs.parent.scrollLeft += $refs.parent.clientWidth">
+            &gt;
+            </button>
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+            hrefCourant = '#'+
+                            [...$refs.parent.children]
+                            .find(e=>e.getBoundingClientRect().x>=0)
+                                                ">
+
+                <div id="ecran-1" class="carrousel_landscape1">
+                </div>
+                
+                <div id="ecran-2" class="carrousel_landscape2">
+                </div>
+                
+                <div id="ecran-3" class="carrousel_landscape3">
+                </div>
+
+                <div id="ecran-4" class="carrousel_landscape4">
+                </div>
+
+                <div id="ecran-5" class="carrousel_landscape5">
+                </div>
+
+                <div id="ecran-6" class="carrousel_landscape6">
+                </div>
+
+                <div id="ecran-7" class="carrousel_landscape7">
+                </div>
+
+                <div id="ecran-8" class="carrousel_landscape8">
+                </div>
+                
+                <div id="ecran-9" class="carrousel_landscape9">
+                </div>
+
+                <div id="ecran-10" class="carrousel_landscape10">
+                </div>
+            </div>
         </section>
     </main>
 
