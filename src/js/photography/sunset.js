@@ -1,4 +1,8 @@
 const gallery = document.querySelector('.gallery');
+const fullscreenBtn = document.getElementById('fullscreen');
+const closeBtn = document.getElementById('close');
+const content = document.getElementById('carrousel');
+
 fetch('../../../src/json/photography/sunset.json')
     .then(response => response.json())
     .then(data => {
@@ -9,8 +13,10 @@ fetch('../../../src/json/photography/sunset.json')
             img.alt = element.alt;
             img.classList.add('main_img');
             img.addEventListener('click', function() { 
-                document.getElementById('carrousel').style.display = 'block';
-                document.body.style.overflow = 'hidden';
+                content.style.display = 'block';
+                content.requestFullscreen().catch(err => {
+                     console.error('Failed to enter fullscreen mode:', err);
+                });
             });
             gallery.appendChild(img);
         });
@@ -19,12 +25,14 @@ fetch('../../../src/json/photography/sunset.json')
 
 // Full Screen //
 
-document.getElementById('fullscreen').addEventListener('click', function() {
-    document.getElementById('carrousel').style.display = 'block';
-    document.body.style.overflow = 'hidden';
+fullscreenBtn.addEventListener('click', () => {
+    content.style.display = 'block';
+    content.requestFullscreen().catch(err => {
+        console.error('Failed to enter fullscreen mode:', err);
+    });
 });
-  
-document.getElementById('close').addEventListener('click', function() {
-    document.getElementById('carrousel').style.display = 'none';
-    document.body.style.overflow = 'auto';
+
+closeBtn.addEventListener('click', () => {
+    content.style.display = 'none';
+    document.exitFullscreen();
 });
