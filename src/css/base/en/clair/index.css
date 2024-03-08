@@ -470,6 +470,12 @@ figcaption {
         grid-column: 1/5;
         font-size: 14px;
     }
+
+    .langue_link:hover {
+        font-size: 16px;
+        font-weight: 800;
+        transition: all 0.2s ease-in-out;
+    }
     
     .langue_link--img {
         width: 40px;
@@ -543,6 +549,12 @@ figcaption {
 
         .photography_filtre, .video_filtre {
             background-color: rgba(18, 17, 19, 0.35);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .photography_link, .video_link {
+            font-weight: 900;
+            transition: all 0.5s ease-in-out;
         }
     }
 
