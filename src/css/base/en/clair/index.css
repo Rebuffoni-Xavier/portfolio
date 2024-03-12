@@ -190,23 +190,23 @@ figcaption {
 }
 
 #photo_item2 {
-    background-image: url(../../../../../public/img/photography/main/IMG_20220803_065642.jpg);
-}
-
-#photo_item3 {
     background-image: url(../../../../../public/img/photography/main/IMG_2110.JPG);
 }
 
-#photo_item4 {
+#photo_item3 {
     background-image: url(../../../../../public/img/photography/main/IMG_2155.JPG);
 }
 
-#photo_item5 {
+#photo_item4 {
     background-image: url(../../../../../public/img/photography/main/IMG_2576.JPG);
 }
 
-#photo_item6 {
+#photo_item5 {
     background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
+}
+
+#photo_item6 {
+    background-image: url(../../../../../public/img/about/IMG_3281.jpg);
 }
 
 .about {
@@ -227,8 +227,27 @@ figcaption {
 
 .about_img {
     grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.1rem;
+    background-color: #FFF8F0;
+}
+
+.about_img--1 {
+    grid-column: 1/5;
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+}
+
+.about_img--2 {
+    grid-column: 1/3;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about_img--3 {
+    grid-column: 3/5;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -416,6 +435,65 @@ figcaption {
     .button_svg path {
         stroke: #FFF8F0;
     }
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.contact h2, .contact p, .contact h3, .instagram-media {
+    grid-column: 1/5;
+}
+
+.contact_form {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact_form label {
+    grid-column: 1/2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #FFF8F0;
+    font-size: 14px;
+}
+
+.contact_form input, .contact_form textarea {
+    grid-column: 1/5;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: #FFF8F0;
+}
+
+.contact_form input {
+    height: 30px;
+}
+
+.contact_form textarea {
+    height: 100px;
+}
+
+.contact_form button {
+    grid-column: 2/4;
+    margin-top: 1rem;
+    height: 40px;
+    background-color: #121113;
+    border: solid 1px #FFF8F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF8F0;
 }
 
 @media screen and (min-width: 768px) {
