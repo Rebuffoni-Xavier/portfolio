@@ -2,43 +2,53 @@
     "img":[
         {
             "src":"../../../public/img/photography/petites/city/IMG_2368.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-1"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2571.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-2"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2576.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-3"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2592.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-4"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2867.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-5"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2970.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-6"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_2991.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-7"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_3568.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-8"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_3575.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-9"
         },
         {
             "src":"../../../public/img/photography/petites/city/IMG_4601.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-10"
         }
     ]
 }

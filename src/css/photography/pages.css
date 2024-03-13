@@ -287,8 +287,9 @@ p {
 
 .othercarrousel_parent-ecrans {
     display: flex;
-    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .othercarrousel_landscapes, .othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
@@ -342,6 +343,39 @@ p {
     font-weight: 800;
     font-size: 30px;
     transition: all 0.3s ease-in-out;
+}
+
+.otherdots {
+    position: absolute;
+    z-index: 3;
+    bottom: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.otherdots_items {
+    display: flex;
+}
+
+.otherdots_items a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.caroussel_lien.actif {
+    background-color: #FFF8F0;
 }
 
 .carrousel {

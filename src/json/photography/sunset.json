@@ -2,43 +2,53 @@
     "img":[
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_1140.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-1"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_6861.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-2"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_1172.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-3"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_1850.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-4"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_1955.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-5"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_4359.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-6"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_5811.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-7"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/IMG_5839.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-8"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/20230929_170741.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-9"
         },
         {
             "src":"../../../public/img/photography/petites/sunset/20230929_174829.jpg",
-            "alt":"City"
+            "alt":"City",
+            "id": "ecran-10"
         }
     ]
 }

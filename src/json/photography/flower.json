@@ -2,43 +2,53 @@
     "img":[
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2114.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-1"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2115.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-2"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2116.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-3"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2117.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-4"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2131.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-5"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2140.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-6"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2142.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-7"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2149.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-8"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2155.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-9"
         },
         {
             "src":"../../../public/img/photography/petites/flowers/IMG_2176.jpg",
-            "alt":"Flowers"
+            "alt":"Flowers",
+            "id": "ecran-10"
         }
     ]
 }

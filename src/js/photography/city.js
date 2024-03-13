@@ -17,6 +17,7 @@ fetch('../../../src/json/photography/city.json')
                 content.requestFullscreen().catch(err => {
                      console.error('Failed to enter fullscreen mode:', err);
                 });
+                document.location.href = '#'+ element.id;
             });
             gallery.appendChild(img);
         });

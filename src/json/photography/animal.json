@@ -2,43 +2,53 @@
     "img":[
         {
             "src":"../../../public/img/photography/petites/animals/IMG_1604.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-1"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_1989.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-2"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_1996.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-3"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2086.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-4"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2092.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-5"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2095.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-6"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2100.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-7"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2101.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-8"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2110.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-9"
         },
         {
             "src":"../../../public/img/photography/petites/animals/IMG_2199.jpg",
-            "alt":"Animals"
+            "alt":"Animals",
+            "id": "ecran-10"
         }
     ]
 }

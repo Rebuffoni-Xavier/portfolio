@@ -121,22 +121,29 @@
                                 .find(e=>e.getBoundingClientRect().x>=0)
                                                     ">
     
-                    <div class="othercarrousel_landscapes">
+                    <div class="othercarrousel_landscapes" id="otherecran-1">
                         <a class="othercontent" href="./landscapes.html">Landscapes</a>
                     </div>
                     
-                    <div class="othercarrousel_animals">
+                    <div class="othercarrousel_animals" id="otherecran-2">
                         <a class="othercontent" href="./animals.html">Animals</a>
                     </div>
                     
-                    <div class="othercarrousel_flowers">
+                    <div class="othercarrousel_flowers" id="otherecran-3">
                         <a class="othercontent" href="./flowers.html">Flowers</a>
                     </div>
     
-                    <div class="othercarrousel_city">
+                    <div class="othercarrousel_city" id="otherecran-4">
                         <a class="othercontent" href="./city.html">City</a>
                     </div>
                 </div>
+
+                <ul class="otherdots">
+                    <li class="otherdots_items"><a href="#otherecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-1'}"></a></li>
+                    <li class="otherdots_items"><a href="#otherecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-2'}"></a></li>
+                    <li class="otherdots_items"><a href="#otherecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-3'}"></a></li>
+                    <li class="otherdots_items"><a href="#otherecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-4'}"></a></li>
+                </ul>
             </div>
         </section>
 
