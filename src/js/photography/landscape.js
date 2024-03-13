@@ -15,8 +15,9 @@ fetch('../../../src/json/photography/landscape.json')
             img.addEventListener('click', function() { 
                 content.style.display = 'block';
                 content.requestFullscreen().catch(err => {
-                     console.error('Failed to enter fullscreen mode:', err);
+                    console.error('Failed to enter fullscreen mode:', err);
                 });
+                document.location.href = '#'+ element.id;
             });
             gallery.appendChild(img);
         });

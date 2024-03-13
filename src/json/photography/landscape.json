@@ -2,11 +2,13 @@
     "img": [
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_0528.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-1"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_0822.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-2"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_0860.jpg",
