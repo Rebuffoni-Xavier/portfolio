@@ -12,35 +12,43 @@
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_0860.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-3"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_0876.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-4"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_1296.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-5"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_1371.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-6"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_1435.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-7"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_3595.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-8"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_4543.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-9"
         },
         {
             "src": "../../../public/img/photography/petites/landscapes/IMG_5571.jpg",
-            "alt": "Landscape"
+            "alt": "Landscape",
+            "id": "ecran-10"
         }
     ]
 }

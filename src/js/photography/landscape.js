@@ -16,6 +16,7 @@ fetch('../../../src/json/photography/landscape.json')
                 content.style.display = 'block';
                 content.requestFullscreen().catch(err => {
                     console.error('Failed to enter fullscreen mode:', err);
+                    content.focus();
                 });
                 document.location.href = '#'+ element.id;
             });
