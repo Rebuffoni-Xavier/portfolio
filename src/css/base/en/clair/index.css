@@ -496,6 +496,14 @@ figcaption {
     color: #FFF8F0;
 }
 
+.contact_form button:hover {
+    cursor: pointer;
+    background-color: #FFF8F0;
+    color: #121113;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 40px;
@@ -623,8 +631,9 @@ figcaption {
         background-color: rgba(0, 0, 0, 0.35);
         display: flex;
         align-items: center;
-        text-align: center;
         height: 480px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .photography, .video {
@@ -677,19 +686,19 @@ figcaption {
     }
 
     .photography_button {
-        grid-column: 6/11;
+        grid-column: 3/8;
     }
 
     .photography_how {
-        grid-column: 6/11;
+        grid-column: 3/8;
     }
 
     .video_button {
-        grid-column: 3/8;
+        grid-column: 6/11;
     }
 
     .video_how {
-        grid-column: 3/8;
+        grid-column: 6/11;
     }
 
     #photobutton:hover, #videobutton:hover {
@@ -711,5 +720,53 @@ figcaption {
     
     #photobutton:hover + .photography_how, #videobutton:hover + .video_how {
         display: block;
+    }
+
+    .contact {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        padding-top: 6rem;
+    }
+    
+    .contact h2, .contact p {
+        grid-column: 3/11;
+    }
+
+    .contact h3, .instagram-media {
+        grid-column: 6/11;
+    }
+    
+    .contact_form {
+        grid-column: 3/8;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    
+    .contact_form label {
+        grid-column: 1/6;
+        font-size: 15px;
+    }
+    
+    .contact_form input, .contact_form textarea {
+        grid-column: 1/6;
+    }
+    
+    .contact_form input {
+        height: 40px;
+    }
+    
+    .contact_form textarea {
+        height: 150px;
+    }
+    
+    .contact_form button {
+        grid-column: 2/5;
+        margin-top: 1rem;
+        height: 40px;
+        background-color: #121113;
+        border: solid 1px #FFF8F0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF8F0;
     }
 }
