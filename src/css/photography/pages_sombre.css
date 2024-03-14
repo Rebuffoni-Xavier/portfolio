@@ -288,7 +288,7 @@ p {
 .othercarrousel_parent-ecrans {
     display: flex;
     scroll-snap-type: x mandatory;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
 }
 
@@ -606,6 +606,10 @@ p {
 
     .othercarrousel_landscapes, .othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
         height: 350px;
+    }
+
+    .othercarrousel_parent-ecrans {
+        overflow-x: hidden;
     }
 
     .othercontent {

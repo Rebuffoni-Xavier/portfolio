@@ -5,37 +5,38 @@
 }
 
 body {
-    background-color: black;
+    background-color: #121113;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: white;
-    font-size: 32px;
-    width: 100%;
-}
-
-h2 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
+    color: #FFF8F0;
     font-size: 24px;
 }
 
-h3 {
-    color: white;
+h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+    color: #FFF8F0;
+    font-size: 22px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFF8F0;
     font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #FFF8F0;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5rem;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 figcaption {
@@ -48,20 +49,109 @@ figcaption {
     margin-top: 0.5rem;
 }
 
-.principal__event, .principal__stopmotion, .principal__looping, .principal__mood {
+#header {
+    position: relative;
     background-size: cover;
-    background-position: top;
-    height: 70vh;
+    background-position: center;
+    height: 100vh;
     width: 100%;
-    padding-top: 30vh;
+    z-index: 3;
 }
 
-.principal__event {
-    background-image: url(../../../public/img/video/poster_cinemania.jpg);
+.intro {
+    position: absolute;
+    background-color: rgba(18, 17, 19, 0.5);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.high {
+    padding-top: 1rem;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.high_logo {
+    grid-column: 1/2;
+}
+
+.high_mode {
+    grid-column: 4/5;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.high_logo--img, .high_mode--img {
+    width: 50%;
+}
+
+.high_menu {
+    display: none;
+}
+
+.intro_text {
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.bottom_link {
+    grid-column: 1/2;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #FFF8F0;
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+
+.bottom_link:hover {
+    font-size: 16px;
+    font-weight: 800;
+    transition: all 0.2s ease-in-out;
+}
+
+.bottom_link--img {
+    height: 34px;
+    width: 34px;
+}
+
+#bottom_arrow {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#bottom_arrow img {
+    height: 40px;
+    width: 40px;
+}
+
+.headerevent {
+    background-image: url(../../../public/img/video/cinemania/poster_cinemania.jpg);
 }
 
 .principal__stopmotion {
-    background-image: url(../../../public/img/video/stopmotion_main.JPG);
+    background-image: url(../../../public/img/video/stopmotion/stopmotion_main.JPG);
 }
 
 .principal__looping {
@@ -70,38 +160,6 @@ figcaption {
 
 .principal__mood {
     background-image: url(../../../public/img/video/mood/main.png);
-}
-
-.intro {
-    background-color: rgba(0, 0, 0, 0.514);
-    width: fit-content;
-    height: fit-content;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.intro p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 1.5rem;
-    color: white;
-    margin-top: 1rem;
-    width: 70%;
-}
-
-.down {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.down_link--img {
-    width: 3rem;
 }
 
 .section1 {
@@ -320,12 +378,114 @@ figcaption {
 }
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+        left: 0;
+        right: 0;
+    }
+    
+    .high {
+        padding-top: 1rem;
+        grid-column: 1/13;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .high_logo--img {
+        width: 40px;
+    }
+
+    .high_mode {
+        display: none;
+    }
+
+    .high_menu {
+        grid-column: 6/13;
+        display: flex;
+        gap: 2rem;
+        justify-content: end;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .high_menu--items a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #FFF8F0;
+    }
+
+    .high_menu--items a:hover {
+        font-weight: 900;
+        color: #92140C;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .high_menu--img {
+        width: 40px;
+    }
+    
+    .intro_text {
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .bottom {
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    
+    .bottom_link {
+        grid-column: 1/5;
+        font-size: 14px;
+    }
+    
+    .bottom_link--img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #bottom_arrow {
+        grid-column: 1/13;
+    }
+    
+    #bottom_arrow img {
+        height: 50px;
+        width: 50px;
+    }
+    
     .video h2 {
-        grid-column: 2/12;
+        grid-column: 3/11;
         order: 1;
     }
     .video iframe {
-        grid-column: 2/12;
+        grid-column: 4/10;
         height: 25rem;
     }
     .video_1 {
@@ -350,11 +510,5 @@ figcaption {
     .website a {
         grid-column: 2/5;
     
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .intro p {
-        width: 100%;
     }
 }
