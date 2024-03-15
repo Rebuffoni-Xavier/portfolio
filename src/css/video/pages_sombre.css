@@ -223,7 +223,7 @@ figcaption {
     grid-column: 1/5;
 }
 
-.shotlist {
+.shotlist, .storyboard, .shooting, .editing {
     grid-column: 1/5;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -231,36 +231,20 @@ figcaption {
     padding-top: 1rem;
 }
 
-.shotlist h3 {
+.shotlist h3, .storyboard h3, .shooting h3, .editing h3 {
     grid-column: 1/5;
 }
 
-.shotlist p {
+.shotlist p, .storyboard p, .shooting p, .editing p {
     grid-column: 1/5;
 }
 
-.shotlist figure {
+.shotlist figure, .storyboard figure, .shooting figure, .editing figure {
     grid-column: 1/5;
 }
 
-.shotlist figure img {
+.shotlist figure img, .storyboard figure img, .shooting figure img, .editing figure img {
     width: 100%;
-}
-
-.shooting {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-}
-
-.shooting h3 {
-    grid-column: 1/5;
-}
-
-.shooting p {
-    grid-column: 1/5;
 }
 
 .shooting iframe {
@@ -290,38 +274,6 @@ figcaption {
     font-style: italic;
     text-align: center;
     color: white;
-}
-
-.shooting figure {
-    grid-column: 1/5;
-}
-
-.shooting figure img {
-    width: 100%;
-}
-
-.editing {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-}
-
-.editing h3 {
-    grid-column: 1/5;
-}
-
-.editing p {
-    grid-column: 1/5;
-}
-
-.editing figure {
-    grid-column: 1/5;
-}
-
-.editing figure img {
-    width: 100%;
 }
 
 .more {
@@ -672,38 +624,21 @@ figcaption {
         grid-column: 3/11;
     }
 
-    .shotlist {
+    .shotlist, .storyboard, .shooting, .editing {
         grid-column: 3/11;
         grid-template-columns: repeat(8, minmax(0, 1fr));
     }
     
-    .shotlist h3 {
+    .shotlist h3, .storyboard h3, .shooting h3, .editing h3 {
         grid-column: 2/8;
     }
     
-    .shotlist p {
+    .shotlist p, .storyboard p, .shooting p, .editing p {
         grid-column: 2/8;
     }
     
-    .shotlist figure {
+    .shotlist figure, .storyboard figure, .shooting figure, .editing figure {
         grid-column: 3/7;
-    }
-    
-    .shotlist figure img {
-        width: 100%;
-    }
-    
-    .shooting {
-        grid-column: 3/11;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-    
-    .shooting h3 {
-        grid-column: 2/8;
-    }
-    
-    .shooting p {
-        grid-column: 2/8;
     }
 
     .shooting iframe {
@@ -716,31 +651,6 @@ figcaption {
     
     .gallery img {
         width: 200px;
-    }
-    
-    .shooting figure {
-        grid-column: 3/7;
-    }
-
-    .editing {
-        grid-column: 3/11;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-    
-    .editing h3 {
-        grid-column: 2/8;
-    }
-    
-    .editing p {
-        grid-column: 2/8;
-    }
-    
-    .editing figure {
-        grid-column: 3/7;
-    }
-    
-    .editing figure img {
-        width: 100%;
     }
 
     .more {
