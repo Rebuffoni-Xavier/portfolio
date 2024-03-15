@@ -86,10 +86,12 @@
             </div>
         </header>
 
-        <section id="how" class="how">
-            <h2>How do I take photos of animals ?</h2>
+        <section id="how">
+            <article class="how">
+                <h2>How do I take photos of animals ?</h2>
 
-            <p>For these photos I use a big zoom lens and I put the full manual mode. To have this camera blur, I put a large aperture (~4.5) and I put the focus on the animal. To have a fixe image of an animal that moves, I also put a big speed (~1/250) with the burst mode.</p>
+                <p>For these photos I use a big zoom lens and I put the full manual mode. To have this camera blur, I put a large aperture (~4.5) and I put the focus on the animal. To have a fixe image of an animal that moves, I also put a big speed (~1/250) with the burst mode.</p>
+            </article>
         </section>
 
         <section class="photos">
@@ -100,51 +102,53 @@
             <button id="fullscreen" class="button_fullscreen">Full Screen</button>
         </section>
 
-        <section class="otherphotos">
-            <h2>Other Photos</h2>
-
-            <div id="other" class="othercarrousel" x-data="{hrefCourant: '#ecran-1',}">
-
-                <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
-                  @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
-                &lt; 
-                </button>
+        <section>
+            <article class="otherphotos">
+                <h2>Other Photos</h2>
     
-                <button class="othercarrousel_btn othercarrousel_btn-apres" aria-label="slide suivant" 
-                  @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
-                &gt;
-                </button>
+                <div id="other" class="othercarrousel" x-data="{hrefCourant: '#ecran-1',}">
     
-                <div class="othercarrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
-                hrefCourant = '#'+
-                                [...$refs.parent.children]
-                                .find(e=>e.getBoundingClientRect().x>=0)
-                                                    ">
-    
-                    <div class="othercarrousel_landscapes" id="otherecran-1">
-                        <a class="othercontent" href="./landscapes.html">Landscapes</a>
+                    <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
+                      @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                    &lt; 
+                    </button>
+        
+                    <button class="othercarrousel_btn othercarrousel_btn-apres" aria-label="slide suivant" 
+                      @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                    &gt;
+                    </button>
+        
+                    <div class="othercarrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                    hrefCourant = '#'+
+                                    [...$refs.parent.children]
+                                    .find(e=>e.getBoundingClientRect().x>=0)
+                                                        ">
+        
+                        <div class="othercarrousel_landscapes" id="otherecran-1">
+                            <a class="othercontent" href="./landscapes.html">Landscapes</a>
+                        </div>
+                        
+                        <div class="othercarrousel_flowers" id="otherecran-2">
+                            <a class="othercontent" href="./flowers.html">Flowers</a>
+                        </div>
+                        
+                        <div class="othercarrousel_city" id="otherecran-3">
+                            <a class="othercontent" href="./city.html">City</a>
+                        </div>
+        
+                        <div class="othercarrousel_sunset" id="otherecran-4">
+                            <a class="othercontent" href="./sunset.html">Sunset</a>
+                        </div>
                     </div>
                     
-                    <div class="othercarrousel_flowers" id="otherecran-2">
-                        <a class="othercontent" href="./flowers.html">Flowers</a>
-                    </div>
-                    
-                    <div class="othercarrousel_city" id="otherecran-3">
-                        <a class="othercontent" href="./city.html">City</a>
-                    </div>
-    
-                    <div class="othercarrousel_sunset" id="otherecran-4">
-                        <a class="othercontent" href="./sunset.html">Sunset</a>
-                    </div>
+                    <ul class="otherdots">
+                        <li class="otherdots_items"><a href="#otherecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-1'}"></a></li>
+                        <li class="otherdots_items"><a href="#otherecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-2'}"></a></li>
+                        <li class="otherdots_items"><a href="#otherecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-3'}"></a></li>
+                        <li class="otherdots_items"><a href="#otherecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-4'}"></a></li>
+                    </ul>
                 </div>
-                
-                <ul class="otherdots">
-                    <li class="otherdots_items"><a href="#otherecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-1'}"></a></li>
-                    <li class="otherdots_items"><a href="#otherecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-2'}"></a></li>
-                    <li class="otherdots_items"><a href="#otherecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-3'}"></a></li>
-                    <li class="otherdots_items"><a href="#otherecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#otherecran-4'}"></a></li>
-                </ul>
-            </div>
+            </article>
         </section>
 
         <section id="carrousel" class="pages__carrousel carrousel" x-data="{hrefCourant: '#ecran-1',}">

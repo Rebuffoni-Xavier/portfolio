@@ -581,7 +581,7 @@ p {
     }
     
     .how p {
-        grid-column: 3/11;
+        grid-column: 4/10;
     }
 
     .button {
@@ -601,7 +601,7 @@ p {
     }
     
     .othercarrousel {
-        grid-column: 3/11;
+        grid-column: 4/10;
     }
 
     .othercarrousel_landscapes, .othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
