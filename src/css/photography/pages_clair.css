@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #121113;
+    background-color: #FFF8F0;
     margin: 0;
     padding: 0;
 }
@@ -13,40 +13,30 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 22px;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: #FFF8F0;
+    color: #121113;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-}
-
-figcaption {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-    color: #FFF8F0;
-    margin-top: 0.5rem;
 }
 
 #header {
@@ -60,7 +50,7 @@ figcaption {
 
 .intro {
     position: absolute;
-    background-color: rgba(18, 17, 19, 0.5);
+    background-color: rgba(255, 255, 255, 0.35);
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -117,7 +107,7 @@ figcaption {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 12px;
     padding-bottom: 1rem;
 }
@@ -146,23 +136,27 @@ figcaption {
     width: 40px;
 }
 
-.headerevent {
-    background-image: url(../../../public/img/video/cinemania/cinemania_main.jpg);
+.headerlandscapes {
+    background-image: url(../../../public/img/photography/main/IMG_1435.JPG);
 }
 
-.headerstopmotion {
-    background-image: url(../../../public/img/video/stopmotion/stopmotion_main.JPG);
+.headeranimals {
+    background-image: url(../../../public/img/photography/main/IMG_2110.JPG);
 }
 
-.headermood {
-    background-image: url(../../../public/img/video/mood/mood_main.jpg);
+.headerflowers {
+    background-image: url(../../../public/img/photography/main/IMG_2155.JPG);
 }
 
-.headeradventure {
-    background-image: url(../../../public/img/video/adventure/adventure_main.jpg);
+.headercity {
+    background-image: url(../../../public/img/photography/main/IMG_2576.JPG);
 }
 
-.context {
+.headersunset {
+    background-image: url(../../../public/img/photography/main/IMG_1850.JPG);
+}
+
+.how {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
@@ -171,87 +165,21 @@ figcaption {
     padding-top: 2rem;
 }
 
-.context p {
-    grid-column: 1/5;
-}
-
-.video {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 4rem;
-}
-
-.video h2 {
-    grid-column: 1/5;
-    order: 1;
-}
-
-.video iframe {
-    width: 100%;
-    height: 20rem;
-    grid-column: 1/5;
-    order: 2;
-}
-
-/* .video video {
-    width: 100%;
-}
-
-.video_1 {
-    grid-column: 2/12;
-    order: 2;
-}
-
-.video_2 {
-    grid-column: 2/12;
-    order: 2;
-} */
-
-.how {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 4rem;
-}
-
 .how h2 {
     grid-column: 1/5;
 }
 
-.shotlist, .storyboard, .shooting, .editing {
+.how p {
     grid-column: 1/5;
+}
+
+.photos {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
-    padding-top: 1rem;
-}
-
-.shotlist h3, .storyboard h3, .shooting h3, .editing h3 {
-    grid-column: 1/5;
-}
-
-.shotlist p, .storyboard p, .shooting p, .editing p {
-    grid-column: 1/5;
-}
-
-.shotlist figure, .storyboard figure, .shooting figure, .editing figure {
-    grid-column: 1/5;
-}
-
-.shotlist figure img, .storyboard figure img, .shooting figure img, .editing figure img {
-    width: 100%;
-}
-
-.shooting iframe {
-    width: 100%;
-    height: 20rem;
-    grid-column: 1/5;
-    order: 2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
 }
 
 .gallery {
@@ -260,110 +188,64 @@ figcaption {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    width: 100%;
 }
 
-.gallery img {
-    width: 150px;
+.main_img {
+    width: 335px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
-.gallery_legend {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-    color: #FFF8F0;
+.main_img:hover {
+    cursor: pointer;
+    border: 2px solid #121113;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 
-.more {
+.button {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
-.more h2 {
-    grid-column: 1/5;
-}
-
-.trailer {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-}
-
-.trailer h3 {
-    grid-column: 1/5;
-}
-
-.trailer iframe {
-    width: 100%;
-    height: 20rem;
-    grid-column: 1/5;
-}
-
-.website {
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    padding-top: 1rem;
-}
-
-.website h3 {
-    grid-column: 1/5;
-}
-
-.website a {
-    grid-column: 1/4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFF8F0;
+.button_fullscreen {
+    grid-column: 2/4;
+    background-color: #121113;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    color: #121113;
+    color: #FFF8F0;
     font-weight: 700;
     font-size: 15px;
-    text-decoration: none;
     line-height: 25px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
 }
 
-.button_svg path {
-    stroke: #121113;
-}
-
-.website:hover a {
-    background-color: #121113;
-    color: #FFF8F0;
+.button_fullscreen:hover {
+    background-color: #FFF8F0;
+    color: #121113;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    border: 2px solid #FFF8F0;
-
-    .button_svg path {
-        stroke: #FFF8F0;
-    }
+    border: 2px solid #121113;
 }
 
-.othervideo {
+.otherphotos {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
-.othervideo h2 {
+.otherphotos h2 {
     grid-column: 1/5;
 }
 
@@ -374,24 +256,24 @@ figcaption {
     }
       
     .othercarrousel_btn {
-        z-index: 2;
+        z-index: 3;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         width: 2rem;
         height: 2rem;
-        background-color: #121113;
+        background-color: #FFF8F0;
         border-radius: 50%;
         border: none;
         display: grid;
         place-content: center;
-        color: #FFF8F0;
+        color: #121113;
         cursor: pointer;
     }
 
     .othercarrousel_btn:hover {
-        background-color: #FFF8F0;
-        color: #121113;
+        background-color: #121113;
+        color: #FFF8F0;
         transition: all 0.3s ease-in-out;
     }
       
@@ -410,7 +292,7 @@ figcaption {
     scroll-behavior: smooth;
 }
 
-.othercarrousel_stopmotion, .othercarrousel_mood, .othercarrousel_event, .othercarrousel_adventure {
+.othercarrousel_landscapes, .othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
     flex: none;
     width: 100%;
     height: 223px;
@@ -419,20 +301,24 @@ figcaption {
     background-position: center;
 }
 
-.othercarrousel_stopmotion {
-    background-image: url(../../../public/img/home/stopmotion_main.jpg);
+.othercarrousel_landscapes {
+    background-image: url(../../../public/img/photography/petites/landscapes/IMG_0528.jpg);
 }
 
-.othercarrousel_mood {
-    background-image: url(../../../public/img/home/mood_main.jpg);
+.othercarrousel_animals {
+    background-image: url(../../../public/img/photography/petites/animals/IMG_1604.jpg);
 }
 
-.othercarrousel_event {
-    background-image: url(../../../public/img/home/event_video.jpg);
+.othercarrousel_flowers {
+    background-image: url(../../../public/img/photography/petites/flowers/IMG_2176.jpg);
 }
 
-.othercarrousel_adventure {
-    background-image: url(../../../public/img/home/adventure_video.jpg);
+.othercarrousel_city {
+    background-image: url(../../../public/img/photography/petites/city/IMG_4601.jpg);
+}
+
+.othercarrousel_sunset {
+    background-image: url(../../../public/img/photography/petites/sunset/IMG_5811.jpg);
 }
 
 .othercontent {
@@ -440,20 +326,20 @@ figcaption {
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-color: rgba(18, 17, 19, 0.35);
+    background-color: rgba(255, 248, 240, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .othercontent:hover {
-    background-color: rgba(18, 17, 19, 0.5);
+    background-color: rgba(255, 248, 240, 0.35);
     font-weight: 800;
     font-size: 30px;
     transition: all 0.3s ease-in-out;
@@ -489,7 +375,97 @@ figcaption {
 }
 
 .caroussel_lien.actif {
-    background-color: #FFF8F0;
+    background-color: #121113;
+}
+
+.carrousel {
+    display: none;
+    box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    }
+
+    .carrousel_close {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.3rem;
+        background-color: transparent;
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        background-color: #92140C;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        border: solid 1px #FFF8F0;
+    }
+
+    .carrousel_close--svg {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .carrousel_close--svg path {
+        fill: #FFF8F0;
+    }
+
+    .carrousel_close:hover {
+        background-color: #FFF8F0;
+        border: solid 1px #92140C;
+        transition: all 0.3s ease-in-out;
+
+        .carrousel_close--svg path {
+            fill: #92140C;
+        }
+    }
+      
+    .carrousel_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        background-color: #FFF8F0;
+        border-radius: 50%;
+        border: none;
+        display: grid;
+        place-content: center;
+        color: #121113;
+        cursor: pointer;
+    }
+
+    .carrousel_btn:hover {
+        background-color: #121113;
+        color: #FFF8F0;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    .carrousel_btn-avant {
+        left: 0;
+    }
+      
+    .carrousel_btn-apres {
+        right: 0;
+    }
+
+.carrousel_parent-ecrans {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#ecran-1, #ecran-2, #ecran-3, #ecran-4, #ecran-5, #ecran-6, #ecran-7, #ecran-8, #ecran-9, #ecran-10 {
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -549,7 +525,7 @@ figcaption {
         font-weight: 400;
         font-size: 16px;
         text-decoration: none;
-        color: #FFF8F0;
+        color: #121113;
     }
 
     .high_menu--items a:hover {
@@ -595,103 +571,32 @@ figcaption {
         width: 50px;
     }
 
-    .context {
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        padding-top: 6rem;
-    }
-    
-    .context p {
-        grid-column: 3/11;
-    }
-    
-    .video {
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-    
-    .video h2 {
-        grid-column: 3/11;
-    }
-    
-    .video iframe {
-        grid-column: 4/10;
-    }
-
     .how {
         grid-template-columns: repeat(12, minmax(0, 1fr));
+        padding-top: 6rem;
     }
     
     .how h2 {
         grid-column: 3/11;
     }
-
-    .shotlist, .storyboard, .shooting, .editing {
-        grid-column: 3/11;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
     
-    .shotlist h3, .storyboard h3, .shooting h3, .editing h3 {
-        grid-column: 2/8;
-    }
-    
-    .shotlist p, .storyboard p, .shooting p, .editing p {
-        grid-column: 2/8;
-    }
-    
-    .shotlist figure, .storyboard figure, .shooting figure, .editing figure {
-        grid-column: 3/7;
+    .how p {
+        grid-column: 4/10;
     }
 
-    .shooting iframe {
-        grid-column: 3/7;
-    }
-
-    .gallery {
-        grid-column: 2/8;
-    }
-    
-    .gallery img {
-        width: 200px;
-    }
-
-    .more {
+    .button {
         grid-template-columns: repeat(12, minmax(0, 1fr));
     }
     
-    .more h2 {
-        grid-column: 3/11;
-    }
-    
-    .trailer {
-        grid-column: 3/11;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-    
-    .trailer h3 {
-        grid-column: 2/8;
-    }
-    
-    .trailer iframe {
-        grid-column: 2/8;
-    }
-    
-    .website {
-        grid-column: 3/11;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-    
-    .website h3 {
-        grid-column: 2/8;
-    }
-    
-    .website a {
-        grid-column: 2/6;
+    .button_fullscreen {
+        grid-column: 5/9;
     }
 
-    .othervideo {
+    .otherphotos {
         grid-template-columns: repeat(12, minmax(0, 1fr));
     }
     
-    .othervideo h2 {
+    .otherphotos h2 {
         grid-column: 3/11;
     }
     
@@ -699,7 +604,7 @@ figcaption {
         grid-column: 4/10;
     }
 
-    .othercarrousel_stopmotion, .othercarrousel_mood, .othercarrousel_event, .othercarrousel_adventure {
+    .othercarrousel_landscapes, .othercarrousel_animals, .othercarrousel_flowers, .othercarrousel_city, .othercarrousel_sunset {
         height: 350px;
     }
 
@@ -709,5 +614,24 @@ figcaption {
 
     .othercontent {
         font-size: 27px;
+    }
+
+    .photos {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .gallery {
+        grid-column: 3/11;
+    }
+
+    .carrousel_close {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .carrousel_btn {
+        width: 3rem;
+        height: 3rem;
+        font-size: 30px;
     }
 }

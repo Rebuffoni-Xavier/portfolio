@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mobile {
+    list-style: none;
+    background-color: #121113;
+    position: fixed;
+    min-width: 100vw;
+    bottom: 0;
+    padding: 0.3rem 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    z-index: 4;
+}
+
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        background-color: #121113;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .desktop_logo--img {
+        width: 50px;
+    }
+
+    .desktop_list {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .desktop_list--items a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #FFF8F0;
+    }
+
+    .desktop_list--items a:hover {
+        font-weight: 900;
+        color: #92140C;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .desktop_list--img {
+        width: 40px;
+    }
+}

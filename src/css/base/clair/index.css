@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #121113;
+    background-color: #FFF8F0;
     margin: 0;
     padding: 0;
 }
@@ -13,27 +13,27 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: #FFF8F0;
+    color: #121113;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -42,7 +42,7 @@ p {
 figcaption {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #121113;
+    color: #FFF8F0;
     font-size: 12px;
     text-align: center;
     margin-top: 1rem;
@@ -55,7 +55,7 @@ figcaption {
 
 .intro {
     position: absolute;
-    background-color: rgba(18, 17, 19, 0.5);
+    background-color: rgba(255, 248, 240, 0.35);
     z-index: 3;
     height: 100vh;
     display: grid;
@@ -117,7 +117,7 @@ figcaption {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 12px;
     padding-bottom: 1rem;
 }
@@ -179,7 +179,7 @@ figcaption {
 .photodot {
     width: 10px;
     height: 10px;
-    background-color: #FFF8F0;
+    background-color: #121113;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
@@ -190,27 +190,27 @@ figcaption {
 }
 
 #photo_item1 {
-    background-image: url(../../../../../public/img/about/IMG_3281.jpg);
+    background-image: url(../../../../public/img/about/IMG_3281.jpg);
 }
 
 #photo_item2 {
-    background-image: url(../../../../../public/img/photography/main/IMG_20220803_065642.jpg);
+    background-image: url(../../../../public/img/photography/main/IMG_20220803_065642.jpg);
 }
 
 #photo_item3 {
-    background-image: url(../../../../../public/img/photography/main/IMG_2110.JPG);
+    background-image: url(../../../../public/img/photography/main/IMG_2110.JPG);
 }
 
 #photo_item4 {
-    background-image: url(../../../../../public/img/photography/main/IMG_2155.JPG);
+    background-image: url(../../../../public/img/photography/main/IMG_2155.JPG);
 }
 
 #photo_item5 {
-    background-image: url(../../../../../public/img/photography/main/IMG_2576.JPG);
+    background-image: url(../../../../public/img/photography/main/IMG_2576.JPG);
 }
 
 #photo_item6 {
-    background-image: url(../../../../../public/img/photography/main/IMG_1850.JPG);
+    background-image: url(../../../../public/img/photography/main/IMG_1850.JPG);
 }
 
 .about {
@@ -234,7 +234,7 @@ figcaption {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.1rem;
-    background-color: #FFF8F0;
+    background-color: #121113;
 }
 
 .about_img--1 {
@@ -278,7 +278,7 @@ figcaption {
     height: 246px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
+    box-shadow: 0px 4px 4px 0px rgba(255, 248, 240, 0.25) inset;
 }
 
 .photography_animals, .photography_city, .video_stopmotion, .video_adventure {
@@ -287,49 +287,49 @@ figcaption {
     height: 246px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 4px 4px 0px rgba(18, 17, 19, 0.25) inset;
+    box-shadow: 0px 4px 4px 0px rgba(255, 248, 240, 0.25) inset;
 }
 
 .photography_landscapes {
-    background-image: url(../../../../../public/img/home/landscapes.jpg);
+    background-image: url(../../../../public/img/home/landscapes.jpg);
 }
 
 .photography_animals {
-    background-image: url(../../../../../public/img/home/animals.jpg);
+    background-image: url(../../../../public/img/home/animals.jpg);
     margin-top: -70px;
 }
 
 .photography_flowers {
-    background-image: url(../../../../../public/img/home/flowers.jpg);
+    background-image: url(../../../../public/img/home/flowers.jpg);
     margin-top: -70px;
 }
 
 .photography_city {
-    background-image: url(../../../../../public/img/home/city.jpg);
+    background-image: url(../../../../public/img/home/city.jpg);
     margin-top: -70px;
 }
 
 .photography_sunset {
-    background-image: url(../../../../../public/img/home/sunset.jpg);
+    background-image: url(../../../../public/img/home/sunset.jpg);
     margin-top: -70px;
 }
 
 .video_event {
-    background-image: url(../../../../../public/img/home/event_video.jpg);
+    background-image: url(../../../../public/img/home/event_video.jpg);
 }
 
 .video_stopmotion {
-    background-image: url(../../../../../public/img/home/stopmotion_main.jpg);
+    background-image: url(../../../../public/img/home/stopmotion_main.jpg);
     margin-top: -70px;
 }
 
 .video_mood {
-    background-image: url(../../../../../public/img/home/mood_main.jpg);
+    background-image: url(../../../../public/img/home/mood_main.jpg);
     margin-top: -70px;
 }
 
 .video_adventure {
-    background-image: url(../../../../../public/img/home/adventure_video.jpg);
+    background-image: url(../../../../public/img/home/adventure_video.jpg);
     margin-top: -70px;
 }
 
@@ -337,7 +337,7 @@ figcaption {
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-color: rgba(18, 17, 19, 0.35);
+    background-color: rgba(255, 248, 240, 0.35);
 }
 
 .photography_link, .video_link {
@@ -352,7 +352,7 @@ figcaption {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
@@ -361,11 +361,11 @@ figcaption {
 .button {
     grid-column: 1/5;
     height: 61px;
-    background-color: #FFF8F0;
+    background-color: #121113;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #121113;
+    color: #FFF8F0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -377,30 +377,30 @@ figcaption {
 }
 
 .button_svg path {
-    stroke: #121113;
+    stroke: #FFF8F0;
 }
 
 .photography_how {
     display: none;
     grid-column: 1/5;
-    background-color: #FFF8F0;
+    background-color: #121113;
     margin-top: -1rem;
 }
 
 .video_how {
     display: none;
     grid-column: 1/5;
-    background-color: #FFF8F0;
+    background-color: #121113;
     margin-top: -1rem;
 }
 
 .photography_how p {
-    color: #121113;
+    color: #FFF8F0;
     padding: 1rem;
 }
 
 .video_how p {
-    color: #121113;
+    color: #FFF8F0;
     padding: 1rem;
 }
 
@@ -427,9 +427,9 @@ figcaption {
 
 #photobutton.clicked, #videobutton.clicked {
     transition: all 0.2s ease-in-out;
-    background-color: #121113;
-    color: #FFF8F0;
-    border: solid 1px #FFF8F0;
+    background-color: #FFF8F0;
+    color: #121113;
+    border: solid 1px #121113;
 
     .button_svg {
         transition: all 0.2s ease-in-out;
@@ -437,7 +437,7 @@ figcaption {
     }
 
     .button_svg path {
-        stroke: #FFF8F0;
+        stroke: #121113;
     }
 }
 
@@ -467,7 +467,7 @@ figcaption {
     grid-column: 1/2;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 14px;
 }
 
@@ -476,7 +476,7 @@ figcaption {
     width: 100%;
     padding: 0;
     border: none;
-    background-color: #FFF8F0;
+    background-color: #121113;
 }
 
 .contact_form input {
@@ -491,19 +491,19 @@ figcaption {
     grid-column: 2/4;
     margin-top: 1rem;
     height: 40px;
-    background-color: #121113;
-    border: solid 1px #FFF8F0;
+    background-color: #FFF8F0;
+    border: solid 1px #121113;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #FFF8F0;
+    color: #121113;
 }
 
 .contact_form button:hover {
     cursor: pointer;
-    background-color: #FFF8F0;
-    color: #121113;
+    background-color: #121113;
+    color: #FFF8F0;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
 }
@@ -565,7 +565,7 @@ figcaption {
         font-weight: 400;
         font-size: 16px;
         text-decoration: none;
-        color: #FFF8F0;
+        color: #121113;
     }
 
     .high_menu--items a:hover {
@@ -636,7 +636,7 @@ figcaption {
     .about p {
         grid-column: 6/11;
         margin-top: -100px;
-        background-color: rgba(0, 0, 0, 0.35);
+        background-color: rgba(255, 255, 255, 0.35);
         display: flex;
         align-items: center;
         height: 480px;
@@ -683,7 +683,7 @@ figcaption {
         transition: all 0.5s ease-in-out;
 
         .photography_filtre, .video_filtre {
-            background-color: rgba(18, 17, 19, 0.35);
+            background-color: rgba(255, 255, 255, 0.35);
             transition: all 0.5s ease-in-out;
         }
 
@@ -712,9 +712,9 @@ figcaption {
     #photobutton:hover, #videobutton:hover {
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-        background-color: #121113;
-        color: #FFF8F0;
-        border: solid 1px #FFF8F0;
+        background-color: #FFF8F0;
+        color: #121113;
+        border: solid 1px #121113;
     
         .button_svg {
             transition: all 0.2s ease-in-out;
@@ -722,7 +722,7 @@ figcaption {
         }
     
         .button_svg path {
-            stroke: #FFF8F0;
+            stroke: #121113;
         }
     }
     
@@ -769,12 +769,12 @@ figcaption {
         grid-column: 2/5;
         margin-top: 1rem;
         height: 40px;
-        background-color: #121113;
-        border: solid 1px #FFF8F0;
+        background-color: #FFF8F0;
+        border: solid 1px #121113;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #FFF8F0;
+        color: #121113;
     }
 }

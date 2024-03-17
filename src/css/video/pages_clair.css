@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #121113;
+    background-color: #FFF8F0;
     margin: 0;
     padding: 0;
 }
@@ -13,27 +13,27 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 22px;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 20px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: #FFF8F0;
+    color: #121113;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -45,7 +45,7 @@ figcaption {
     font-size: 14px;
     font-style: italic;
     text-align: center;
-    color: #FFF8F0;
+    color: #121113;
     margin-top: 0.5rem;
 }
 
@@ -60,7 +60,7 @@ figcaption {
 
 .intro {
     position: absolute;
-    background-color: rgba(18, 17, 19, 0.5);
+    background-color: rgba(255, 255, 255, 0.35);
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -117,7 +117,7 @@ figcaption {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 12px;
     padding-bottom: 1rem;
 }
@@ -273,7 +273,7 @@ figcaption {
     font-size: 14px;
     font-style: italic;
     text-align: center;
-    color: #FFF8F0;
+    color: #121113;
 }
 
 .more {
@@ -324,10 +324,10 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFF8F0;
+    background-color: #121113;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    color: #121113;
+    color: #FFF8F0;
     font-weight: 700;
     font-size: 15px;
     text-decoration: none;
@@ -339,18 +339,18 @@ figcaption {
 }
 
 .button_svg path {
-    stroke: #121113;
+    stroke: #FFF8F0;
 }
 
 .website:hover a {
-    background-color: #121113;
-    color: #FFF8F0;
+    background-color: #FFF8F0;
+    color: #121113;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    border: 2px solid #FFF8F0;
+    border: 2px solid #121113;
 
     .button_svg path {
-        stroke: #FFF8F0;
+        stroke: #121113;
     }
 }
 
@@ -380,18 +380,18 @@ figcaption {
         transform: translateY(-50%);
         width: 2rem;
         height: 2rem;
-        background-color: #121113;
+        background-color: #FFF8F0;
         border-radius: 50%;
         border: none;
         display: grid;
         place-content: center;
-        color: #FFF8F0;
+        color: #121113;
         cursor: pointer;
     }
 
     .othercarrousel_btn:hover {
-        background-color: #FFF8F0;
-        color: #121113;
+        background-color: #121113;
+        color: #FFF8F0;
         transition: all 0.3s ease-in-out;
     }
       
@@ -440,20 +440,20 @@ figcaption {
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-color: rgba(18, 17, 19, 0.35);
+    background-color: rgba(255, 248, 240, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #FFF8F0;
+    color: #121113;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .othercontent:hover {
-    background-color: rgba(18, 17, 19, 0.5);
+    background-color: rgba(255, 248, 240, 0.35);
     font-weight: 800;
     font-size: 30px;
     transition: all 0.3s ease-in-out;
@@ -489,7 +489,7 @@ figcaption {
 }
 
 .caroussel_lien.actif {
-    background-color: #FFF8F0;
+    background-color: #121113;
 }
 
 @media screen and (min-width: 768px) {
@@ -549,7 +549,7 @@ figcaption {
         font-weight: 400;
         font-size: 16px;
         text-decoration: none;
-        color: #FFF8F0;
+        color: #121113;
     }
 
     .high_menu--items a:hover {
