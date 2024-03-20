@@ -291,7 +291,22 @@ gtag('config', 'G-NZ3TJC47LX');
     </footer>
 </body>
 
-<script src="../../src/js/home/home.js"></script>
-<script src="../../src/js/components/smooth_scroll.js"></script>
+<script src="../src/js/home/home.js"></script>
+<script defer src="../src/js/home/carousel-img.js"></script>
+<script src="../src/js/components/smooth_scroll.js"></script>
+
+<!-- <script>
+    // Fonction pour charger le fichier JavaScript après un délai
+    function loadDelayedScript() {
+        setTimeout(function() {
+            var script = document.createElement('script');
+            script.src = '../src/js/home/carousel-img.js';
+            document.body.appendChild(script);
+        }, 5000); // Délai en millisecondes (ici 5 secondes)
+    }
+
+    // Appeler la fonction pour charger le script différé
+    loadDelayedScript();
+</script> -->
 
 </html>
