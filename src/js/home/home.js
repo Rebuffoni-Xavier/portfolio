@@ -42,7 +42,7 @@ function updateDotsPhoto() {
 function startAutoSlide() {
     autoSlideInterval = setInterval(() => {
       nextSlidePhoto();
-    }, 5000);
+    }, 4000);
   }
 
 function stopAutoSlide() {
