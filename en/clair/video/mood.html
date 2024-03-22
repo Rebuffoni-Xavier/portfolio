@@ -149,12 +149,22 @@
                 <div id="other" class="othercarrousel" x-data="{hrefCourant: '#otherecran-1',}">
     
                     <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
-                      @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                      @click="if (hrefCourant==='#otherecran-1') {
+                        $refs.parent.scrollLeft = $refs.parent.scrollWidth - $refs.parent.clientWidth;
+                      }
+                      else {
+                        $refs.parent.scrollLeft -= $refs.parent.clientWidth;
+                      }">
                     &lt; 
                     </button>
         
                     <button class="othercarrousel_btn othercarrousel_btn-apres" aria-label="slide suivant" 
-                      @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                      @click="if (hrefCourant==='#otherecran-3') {
+                        $refs.parent.scrollLeft = 0;
+                      }
+                      else {
+                        $refs.parent.scrollLeft += $refs.parent.clientWidth;
+                      }">
                     &gt;
                     </button>
         
