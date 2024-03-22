@@ -482,14 +482,14 @@ figcaption {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #FFF8F0;
     border: none;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .caroussel_lien.actif {
-    background-color: #FFF8F0;
+    background-color: #92140C;
 }
 
 @media screen and (min-width: 768px) {

@@ -166,7 +166,7 @@
             <article class="othervideo">
                 <h2>Other Video</h2>
     
-                <div id="other" class="othercarrousel" x-data="{hrefCourant: '#ecran-1',}">
+                <div id="other" class="othercarrousel" x-data="{hrefCourant: '#otherecran-1',}">
     
                     <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
                       @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
@@ -182,6 +182,7 @@
                     hrefCourant = '#'+
                                     [...$refs.parent.children]
                                     .find(e=>e.getBoundingClientRect().x>=0)
+                                    .id
                                                         ">
         
                         <div class="othercarrousel_stopmotion" id="otherecran-1">

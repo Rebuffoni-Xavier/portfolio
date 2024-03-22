@@ -368,14 +368,14 @@ p {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #121113;
     border: none;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .caroussel_lien.actif {
-    background-color: #121113;
+    background-color: #92140C;
 }
 
 .carrousel {
