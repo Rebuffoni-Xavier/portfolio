@@ -8,23 +8,45 @@
     <title>Page 404</title>
 
     <link rel="icon" href="../public/icons/Final.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/base/404.css">
+    <link rel="stylesheet" href="./src/css/layout/header_sombre.css">
+    <link rel="stylesheet" href="./src/css/layout/footer_sombre.css">
 </head>
 
 <body>
+    <header class="menu">
+        <img src="./public/icons/final.svg" alt="Logo Portfolio">
+    </header>
     <main>
         <section>
-            <h1>Page Non trouvée</h1>
+            <h2>Page Non trouvée</h2>
+            <h2>Page no found</h2>
 
-            <form action="https://www.google.fr/" method="GET"
-                x-data="{ q:'', }" 
-                x-on:submit="q = q + site'https://portfolio.rebuffoni.fr/'">
-                <label for="q">Text à chercher :</label>
-                
-                <input type="text" id="q" name="q" x-model="q">
+            <button>Français</button>
+            <button>English</button>
+        </section>
 
-                <button type="submit">Rechercher</button>
-            </form>
+        <section>
+            <a href="./fr/index.html">Accueil</a>
+        </section>
+
+        <section>
+            <a href="./en/index.html">Home</a>
         </section>
     </main>
+
+    <footer class="footer">
+        <sections class="footer_reseaux reseaux">
+            <ul class="reseaux_link">
+                <li><a href="https://www.instagram.com/infinity___photos/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img class="reseaux_link--img1" src="../public/icons/sombre/instagram-svgrepo-com.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img class="reseaux_link--img2" src="../public/icons/sombre/facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+                <li><a href="mailto:xav.rebuffoni@gmail.com"><img class="reseaux_link--img2" src="../public/icons/sombre/email-1-svgrepo-com.svg" alt="Email"></a></li>
+                <li><a href="https://www.linkedin.com/in/xavier-rebuffoni-786128256/"><img class="reseaux_link--img1" src="../public/icons/sombre/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></li>
+            </ul>
+        </sections>
+
+        <sections class="footer_credits credits">&copy; Xavier REBUFFONI - 2024</sections>
+    </footer>
 </body>
 </html>
