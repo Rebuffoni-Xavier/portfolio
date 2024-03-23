@@ -1,43 +1,43 @@
 {
-    "img":[
+    "sections":[
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_1140.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_1140.jpg",
             "id": "ecran-1"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_6861.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_6861.jpg",
             "id": "ecran-2"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_1172.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_1172.jpg",
             "id": "ecran-3"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_1850.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_1850.jpg",
             "id": "ecran-4"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_1955.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_1955.jpg",
             "id": "ecran-5"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_4359.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_4359.jpg",
             "id": "ecran-6"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_5811.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_5811.jpg",
             "id": "ecran-7"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/IMG_5839.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/IMG_5839.jpg",
             "id": "ecran-8"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/20230929_170741.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/20230929_170741.jpg",
             "id": "ecran-9"
         },
         {
-            "src":"../../../../public/img/photography/grandes/sunset/20230929_174829.jpg",
+            "image":"../../../../public/img/photography/grandes/sunset/20230929_174829.jpg",
             "id": "ecran-10"
         }
     ]

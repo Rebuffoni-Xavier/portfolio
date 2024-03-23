@@ -1,43 +1,43 @@
 {
-    "img":[
+    "sections":[
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2368.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2368.jpg",
             "id": "ecran-1"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2571.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2571.jpg",
             "id": "ecran-2"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2576.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2576.jpg",
             "id": "ecran-3"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2592.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2592.jpg",
             "id": "ecran-4"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2867.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2867.jpg",
             "id": "ecran-5"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2970.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2970.jpg",
             "id": "ecran-6"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_2991.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_2991.jpg",
             "id": "ecran-7"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_3568.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_3568.jpg",
             "id": "ecran-8"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_3575.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_3575.jpg",
             "id": "ecran-9"
         },
         {
-            "src":"../../../../public/img/photography/grandes/city/IMG_4601.jpg",
+            "image":"../../../../public/img/photography/grandes/city/IMG_4601.jpg",
             "id": "ecran-10"
         }
     ]

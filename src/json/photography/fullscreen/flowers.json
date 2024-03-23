@@ -1,43 +1,43 @@
 {
-    "img":[
+    "sections":[
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2114.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2114.jpg",
             "id": "ecran-1"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2115.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2115.jpg",
             "id": "ecran-2"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2116.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2116.jpg",
             "id": "ecran-3"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2117.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2117.jpg",
             "id": "ecran-4"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2131.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2131.jpg",
             "id": "ecran-5"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2140.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2140.jpg",
             "id": "ecran-6"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2142.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2142.jpg",
             "id": "ecran-7"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2149.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2149.jpg",
             "id": "ecran-8"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2155.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2155.jpg",
             "id": "ecran-9"
         },
         {
-            "src":"../../../../public/img/photography/grandes/flowers/IMG_2176.jpg",
+            "image":"../../../../public/img/photography/grandes/flowers/IMG_2176.jpg",
             "id": "ecran-10"
         }
     ]

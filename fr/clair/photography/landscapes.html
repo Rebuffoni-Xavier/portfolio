@@ -191,7 +191,7 @@
                 </svg>
             </button>
 
-            <button class="othercarrousel_btn othercarrousel_btn-avant" aria-label="slide précedant"
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                 @click="if (hrefCourant==='#ecran-1') {
                     $refs.parent.scrollLeft = $refs.parent.scrollWidth - $refs.parent.clientWidth;
                 }
@@ -201,7 +201,7 @@
             &lt; 
             </button>
         
-            <button class="othercarrousel_btn othercarrousel_btn-apres" aria-label="slide suivant" 
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" 
                 @click="if (hrefCourant==='#ecran-10') {
                     $refs.parent.scrollLeft = 0;
                 }

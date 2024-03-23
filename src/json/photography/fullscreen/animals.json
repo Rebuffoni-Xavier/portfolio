@@ -1,43 +1,43 @@
 {
-    "img":[
+    "sections":[
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_1604.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_1604.jpg",
             "id": "ecran-1"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_1989.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_1989.jpg",
             "id": "ecran-2"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_1996.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_1996.jpg",
             "id": "ecran-3"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2086.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2086.jpg",
             "id": "ecran-4"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2092.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2092.jpg",
             "id": "ecran-5"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2095.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2095.jpg",
             "id": "ecran-6"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2100.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2100.jpg",
             "id": "ecran-7"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2101.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2101.jpg",
             "id": "ecran-8"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2110.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2110.jpg",
             "id": "ecran-9"
         },
         {
-            "src":"../../../../public/img/photography/grandes/animals/IMG_2199.jpg",
+            "image":"../../../../public/img/photography/grandes/animals/IMG_2199.jpg",
             "id": "ecran-10"
         }
     ]
