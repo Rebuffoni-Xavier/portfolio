@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page 404</title>
+
+    <link rel="icon" href="../public/icons/Final.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Page Non trouvée</h1>
+
+            <form action="https://www.google.fr/" method="GET"
+                x-data="{ q:'', }" 
+                x-on:submit="q = q + site'https://portfolio.rebuffoni.fr/'">
+                <label for="q">Text à chercher :</label>
+                
+                <input type="text" id="q" name="q" x-model="q">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
