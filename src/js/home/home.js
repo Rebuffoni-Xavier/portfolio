@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var photovisible = document.getElementById('photohow');
 
   photobutton.addEventListener('click', function () {
-      // Toggle the 'hidden' class on the #visible div
       photovisible.classList.toggle('visible');
       photobutton.classList.toggle('clicked');
   });
@@ -70,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var videovisible = document.getElementById('videohow');
 
   videobutton.addEventListener('click', function () {
-      // Toggle the 'hidden' class on the #visible div
       videovisible.classList.toggle('visible');
       videobutton.classList.toggle('clicked');
   });
