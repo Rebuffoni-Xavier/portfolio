@@ -99,8 +99,14 @@ figcaption {
     gap: 1rem;
 }
 
-.intro_text h2 {
+.intro_text h1 {
+    font-weight: 700;
     font-size: 20px;
+}
+
+.intro_text h2 {
+    font-weight: 800;
+    font-size: 30px;
 }
 
 .bottom {
@@ -565,8 +571,12 @@ figcaption {
         gap: 1rem;
     }
 
-    .intro_text h2 {
+    .intro_text h1 {
         font-size: 24px;
+    }
+
+    .intro_text h2 {
+        font-size: 40px;
     }
     
     .bottom {
