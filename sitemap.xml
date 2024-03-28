@@ -12,103 +12,141 @@
   <loc>https://portfolio.rebuffoni.fr/en/</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>1.00</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/index.html"/>
   <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/index.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/index.html"/>
   <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/index.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/photography/landscapes</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/landscapes.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/landscapes.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/photography/animals</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/animals.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/animals.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/photography/flowers</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/flowers.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/flowers.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/photography/city</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/city.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/city.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/photography/sunset</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/sunset.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/sunset.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/video/event</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/event.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/event.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/video/stopmotion</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/stopmotion.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/stopmotion.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/video/mood</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/mood.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/mood.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/en/sombre/video/adventure</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/adventure.html"/>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/adventure.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/photography/landscapes</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/landscapes.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/landscapes.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/photography/animals</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/animals.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/animals.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/photography/flowers</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/flowers.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/flowers.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/photography/city</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/city.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/city.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/photography/sunset</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/photography/sunset.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/photography/sunset.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/video/event</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/event.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/event.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/video/stopmotion</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/stopmotion.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/stopmotion.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/video/mood</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/mood.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/mood.html"/>
 </url>
 <url>
   <loc>https://portfolio.rebuffoni.fr/fr/sombre/video/adventure</loc>
   <lastmod>2024-03-27T16:51:02+00:00</lastmod>
   <priority>0.64</priority>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.rebuffoni.fr/fr/sombre/video/adventure.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.rebuffoni.fr/en/sombre/video/adventure.html"/>
 </url>
 
 
